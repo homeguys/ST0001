@@ -6,7 +6,7 @@ import recompact from 'recompact'
 import loginSubmit from '../../component/hoc_component/login_submit'
 import loginCheck from '../../component/hoc_component/login_check'
 import { loginIn } from '../../store/login.redux'
-import { title } from '../../config/varibles'
+import { title, titleEn } from '../../config/varibles'
 import './style.scss'
 
 const enhance = recompact.compose(
@@ -45,6 +45,7 @@ class Login extends React.Component {
       <section id="login" className="wrapper">
         <article className="content">
           <section className="title">{title}</section>
+          <section className="title">{titleEn}</section>
           <section className="login-box">
             <span className="login-title">登录账号</span>
             <div className="input user">
