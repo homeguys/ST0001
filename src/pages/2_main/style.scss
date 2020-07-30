@@ -1,0 +1,13 @@
+@import '../../style/default.scss';
+@import '../../style/theme.scss';
+
+#main {
+  // background: url(../../static/images/bg_main.jpg) no-repeat center;
+  background-size: 100% 100%;
+
+  .main-content {
+    display: flex;
+    height: calc(100% - 0.66rem);
+    padding-top: 0.1rem;
+  }
+}

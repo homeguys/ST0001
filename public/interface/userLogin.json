@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "code": 200,
+  "data": {
+    "id": "5cfbeeba01b74d88b17b702ace83a9a2",
+    "userName": "yunnan",
+    "nickName": "yunnan",
+    "regionId": "640000000000",
+    "regionName": "宁夏",
+    "regionLevel": 0,
+    "longitudeCenter": 106.162409791,
+    "latitudeCenter": 37.2710672047,
+    "longitudeMin": 104.283035166,
+    "longitudeMax": 107.660427741,
+    "latitudeMin": 35.23838936,
+    "latitudeMax": 39.387653923
+  }
+}

@@ -1,0 +1,39 @@
+.search-box {
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    height: 0.36rem;
+
+    .title {
+      margin-right: 0.1rem;
+      width: 1rem;
+      color: #fff;
+    }
+
+    .form-item {
+      margin-bottom: 0;
+      flex: 1 1;
+
+      .ant-input,
+      .ant-select-selection {
+        background-color: rgba(4, 24, 42, 0.87);
+        border: 1px solid rgba(42, 92, 177, 1);
+        color: rgba(255, 255, 255, 1);
+      }
+
+      .anticon {
+        color: rgba(1, 121, 213, 1);
+      }
+    }
+
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+      margin-left: 0;
+    }
+
+    .ant-checkbox-wrapper {
+      margin-right: 0.08rem;
+      margin-bottom: 0.08rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+#toolbars {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  height: 0.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 0.16rem;
+
+  .ant-cascader-picker {
+    background: rgba(12, 43, 67, 0.51);
+    height: 100%;
+
+    .ant-cascader-input,
+    .ant-cascader-picker-label {
+      color: #fff;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "status": 200,
+  "code": 200,
+  "data": {
+    "totalCount": 3,
+    "productInfoList": [
+      {
+        "id": null,
+        "createTime": null,
+        "updateTime": null,
+        "version": null,
+        "cycle": "COOD",
+        "name": "增强植被指数",
+        "issue": "20160701143400",
+        "mark": "EVI",
+        "mapUrl": "",
+        "featureName": null,
+        "productPath": "/data/yunnan2/outputFile/product",
+        "gdbPath": null,
+        "productId": null,
+        "regionId": "530000000000",
+        "isRelease": 0,
+        "bz": "",
+        "mosaicFile": "EVI_FY3B_VIRR20160701T143400002Z",
+        "inputFileName": null,
+        "modelIdentify": null,
+        "productFileInfoList": [
+          {
+            "fileName": "1.jpg",
+            "relativePath": "/EVI_FY3B_VIRR/COOD/202005/202005090000/530000000000/VGT_EVI_RCUR_202005090000_COOD_FY3B_VIRR_530000000000.jpg",
+            "filePath": "/data/yunnan2/outputFile/product/EVI_FY3B_VIRR/COOD/202005/202005090000/530000000000/VGT_EVI_RCUR_202005090000_COOD_FY3B_VIRR_530000000000.jpg",
+            "id": "0bffa542194d4f8eb5f8e58fe63fb261",
+            "fileType": "jpg",
+            "productType": "pic"
+          },
+          {
+            "fileName": "1.tif",
+            "relativePath": "/EVI_FY3B_VIRR/COOD/202005/202005090000/530000000000/VGT_EVI_RCUR_202005090000_COOD_FY3B_VIRR_530000000000.tif",
+            "filePath": "/data/yunnan2/outputFile/product/EVI_FY3B_VIRR/COOD/202005/202005090000/530000000000/VGT_EVI_RCUR_202005090000_COOD_FY3B_VIRR_530000000000.tif",
+            "id": "0bffa542194d4f8eb5f8e58fe63fb261",
+            "fileType": "tif",
+            "productType": "file"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "createTime": null,
+        "updateTime": null,
+        "version": null,
+        "cycle": "COTD",
+        "name": "增强植被指数",
+        "issue": "20190313161900",
+        "mark": "EVI",
+        "mapUrl": "",
+        "featureName": null,
+        "productPath": "/data/yunnan2/outputFile/product",
+        "gdbPath": null,
+        "productId": null,
+        "regionId": "530000000000",
+        "isRelease": 0,
+        "bz": "",
+        "mosaicFile": "EVI_FY3B_VIRR20190313T161900002Z",
+        "inputFileName": null,
+        "modelIdentify": null,
+        "productFileInfoList": [
+          {
+            "fileName": "2.tif",
+            "relativePath": "/EVI_FY3B_VIRR/COOD/202005/202005070000/530000000000/VGT_EVI_RCUR_202005070000_COOD_FY3B_VIRR_530000000000.tif",
+            "filePath": "/data/yunnan2/outputFile/product/EVI_FY3B_VIRR/COOD/202005/202005070000/530000000000/VGT_EVI_RCUR_202005070000_COOD_FY3B_VIRR_530000000000.tif",
+            "id": "b80032da9df748e4bf057a8bfe883e52",
+            "fileType": "tif",
+            "productType": "file"
+          },
+          {
+            "fileName": "2.jpg",
+            "relativePath": "/EVI_FY3B_VIRR/COOD/202005/202005070000/530000000000/VGT_EVI_RCUR_202005070000_COOD_FY3B_VIRR_530000000000.jpg",
+            "filePath": "/data/yunnan2/outputFile/product/EVI_FY3B_VIRR/COOD/202005/202005070000/530000000000/VGT_EVI_RCUR_202005070000_COOD_FY3B_VIRR_530000000000.jpg",
+            "id": "b80032da9df748e4bf057a8bfe883e52",
+            "fileType": "jpg",
+            "productType": "pic"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "createTime": null,
+        "updateTime": null,
+        "version": null,
+        "cycle": "COOD",
+        "name": "增强植被指数",
+        "issue": "20191029152900",
+        "mark": "EVI",
+        "mapUrl": "",
+        "featureName": null,
+        "productPath": "/data/yunnan2/outputFile/product",
+        "gdbPath": null,
+        "productId": null,
+        "regionId": "530000000000",
+        "isRelease": 0,
+        "bz": "",
+        "mosaicFile": "EVI_FY3B_VIRR20191029T152900002Z",
+        "inputFileName": null,
+        "modelIdentify": null,
+        "productFileInfoList": [
+          {
+            "fileName": "3.tif",
+            "relativePath": "/EVI_FY3B_VIRR/COOD/202005/202005050000/530000000000/VGT_EVI_RCUR_202005050000_COOD_FY3B_VIRR_530000000000.tif",
+            "filePath": "/data/yunnan2/outputFile/product/EVI_FY3B_VIRR/COOD/202005/202005050000/530000000000/VGT_EVI_RCUR_202005050000_COOD_FY3B_VIRR_530000000000.tif",
+            "id": "7ed82754fa854cf5801d677993e4384f",
+            "fileType": "tif",
+            "productType": "file"
+          },
+          {
+            "fileName": "3.jpg",
+            "relativePath": "/EVI_FY3B_VIRR/COOD/202005/202005050000/530000000000/VGT_EVI_RCUR_202005050000_COOD_FY3B_VIRR_530000000000.jpg",
+            "filePath": "/data/yunnan2/outputFile/product/EVI_FY3B_VIRR/COOD/202005/202005050000/530000000000/VGT_EVI_RCUR_202005050000_COOD_FY3B_VIRR_530000000000.jpg",
+            "id": "7ed82754fa854cf5801d677993e4384f",
+            "fileType": "jpg",
+            "productType": "pic"
+          }
+        ]
+      }
+    ]
+  }
+}

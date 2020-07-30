@@ -1,0 +1,15 @@
+@import '../../style/default.scss';
+
+.search-list-info {
+  @include searchTitle();
+}
+
+.search-info-modal {
+  .ant-modal {
+    width: auto !important;
+
+    img {
+      width: 6rem;
+    }
+  }
+}

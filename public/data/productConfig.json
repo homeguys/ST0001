@@ -1,0 +1,558 @@
+﻿[
+  {
+    "mark": "VSWI",
+    "name": "植被供水指数",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "FY4A_AGRI",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ],
+    "statistics": "bar"
+  },
+  {
+    "mark": "TVDI",
+    "name": "植被温度干旱指数",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "FY4A_AGRI",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "PDI",
+    "name": "垂直干旱指数",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "FY4A_AGRI",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "SOILM",
+    "name": "土壤湿度",
+    "sateAndSensors": [
+      "FY3C_MWRI"
+    ],
+    "cycles": [
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "DWLH",
+    "name": "烤烟低温冷害监测",
+    "sateAndSensors": [
+      "EOS_MODIS",
+      "FY3B_VIRR"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COAW",
+        "value": "周"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "SDJC",
+    "name": "甘蔗霜冻害监测",
+    "sateAndSensors": [
+      "EOS_MODIS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "FFDI",
+    "name": "森林火险等级预报",
+    "sateAndSensors": [],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "NDVI",
+    "name": "归一化植被指数",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "FY4A_AGRI",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      },
+      {
+        "key": "COAQ",
+        "value": "季"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ],
+    "Default": true
+  },
+  {
+    "mark": "EVI",
+    "name": "增强植被指数",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "FY4A_AGRI",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      },
+      {
+        "key": "COAQ",
+        "value": "季"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "CROPGROWTH",
+    "name": "作物长势监测",
+    "sateAndSensors": [
+      "EOS_MODIS"
+    ],
+    "cycles": [
+      {
+        "key": "COTD",
+        "value": "旬"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "PEST",
+    "name": "作物病虫害监测",
+    "sateAndSensors": [],
+    "cycles": [
+      {
+        "key": "COAY",
+        "value": "年"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "RDSI",
+    "name": "石漠化敏感性监测",
+    "sateAndSensors": [
+      "FY3B_VIRR"
+    ],
+    "cycles": [
+      {
+        "key": "COAY",
+        "value": "年"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "ET",
+    "name": "蒸散量监测",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "NPP",
+    "name": "NPP月估算",
+    "sateAndSensors": [
+      "EOS_MODIS"
+    ],
+    "cycles": [
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "NPPY",
+    "name": "NPP年估算",
+    "sateAndSensors": [
+      "EOS_MODIS"
+    ],
+    "cycles": [
+      {
+        "key": "COAY",
+        "value": "年"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "LSP",
+    "name": "景观格局监测",
+    "sateAndSensors": [],
+    "cycles": [
+      {
+        "key": "COAY",
+        "value": "年"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "ALBEDO",
+    "name": "反照率",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "FY4A_AGRI",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "LST",
+    "name": "地表温度",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "FY4A_AGRI",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "ESI",
+    "name": "蒸散指数",
+    "sateAndSensors": [
+      "FY3D_MERSI",
+      "FY3B_VIRR",
+      "EOS_MODIS",
+      "NPP_VIIRS"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      },
+      {
+        "key": "COTD",
+        "value": "旬"
+      },
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "VCI",
+    "name": "植被状态指数",
+    "sateAndSensors": [
+      "EOS_MODIS"
+    ],
+    "cycles": [
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "VCIC",
+    "name": "农田植被状态指数",
+    "sateAndSensors": [
+      "EOS_MODIS"
+    ],
+    "cycles": [
+      {
+        "key": "COAM",
+        "value": "月"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "VCIE",
+    "name": "作物植被干旱指数",
+    "sateAndSensors": [
+      "EOS_MODIS"
+    ],
+    "cycles": [
+      {
+        "key": "COTD",
+        "value": "旬"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  },
+  {
+    "mark": "WATER",
+    "name": "高分三水体面积监测",
+    "sateAndSensors": [
+      "GF3_QPSI"
+    ],
+    "cycles": [
+      {
+        "key": "COOD",
+        "value": "日"
+      }
+    ],
+    "regionIds": [
+      {
+        "name": "云南省",
+        "value": "530000000000"
+      }
+    ]
+  }
+]
