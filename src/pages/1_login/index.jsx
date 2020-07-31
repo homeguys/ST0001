@@ -2,7 +2,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import { Select } from 'antd'
+import { Select, Checkbox } from 'antd'
 import recompact from 'recompact'
 import loginSubmit from '../../component/hoc_component/login_submit'
 import loginCheck from '../../component/hoc_component/login_check'
@@ -60,9 +60,12 @@ class Login extends React.Component {
             </div>
             <div className="input password">
               <i className="iconfont">&#xe600;</i>
-              <Select placeholder="请选择下拉" style={{ width: '100%' }} {...getField('cycle')}>
+              <Select placeholder="请选择下拉" style={{ width: '100%' }} {...getField('sysType')}>
                 <Option value="1">业务平台</Option>
               </Select>
+            </div>
+            <div className="remember">
+              <Checkbox {...getField('remember')}>记住密码</Checkbox>
             </div>
             <div className="error">{errorMsg ? <p className="errorMsg">{errorMsg}</p> : null}</div>
             <div className="input btn">
@@ -71,6 +74,7 @@ class Login extends React.Component {
             </div>
           </section>
         </article>
+        <section className="footer">版权信息：杭州禹川信息科技有限公司</section>
       </section>
     )
   }
