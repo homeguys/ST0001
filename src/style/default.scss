@@ -21,16 +21,33 @@
     background-image: none;
   }
 
-  // table empty样式
-  .ant-table-empty {
-    .ant-table-placeholder {
-      background: transparent;
-      border: none;
+  // // table empty样式
+  // .ant-table-empty {
+  //   .ant-table-placeholder {
+  //     background: transparent;
+  //     border: none;
 
-      .ant-empty-normal {
-        color: #fff;
-      }
-    }
+  //     .ant-empty-normal {
+  //       color: #fff;
+  //     }
+  //   }
+  // }
+
+  .ant-select-selection {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+
+  .ant-select-arrow {
+    color: #fff;
+  }
+
+  .ant-select-focused .ant-select-selection,
+  .ant-select-selection:focus,
+  .ant-select-selection:active {
+    border-color: transparent;
+    box-shadow: none;
   }
 }
 

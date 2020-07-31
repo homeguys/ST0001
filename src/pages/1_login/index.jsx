@@ -2,12 +2,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
+import { Select } from 'antd'
 import recompact from 'recompact'
 import loginSubmit from '../../component/hoc_component/login_submit'
 import loginCheck from '../../component/hoc_component/login_check'
 import { loginIn } from '../../store/login.redux'
 import { title, titleEn } from '../../config/varibles'
 import './style.scss'
+
+const { Option } = Select
 
 const enhance = recompact.compose(
   connect((state) => state.logining, { loginIn }),
@@ -45,9 +48,8 @@ class Login extends React.Component {
       <section id="login" className="wrapper">
         <article className="content">
           <section className="title">{title}</section>
-          <section className="title">{titleEn}</section>
+          <section className="title-en">{titleEn}</section>
           <section className="login-box">
-            <span className="login-title">登录账号</span>
             <div className="input user">
               <i className="iconfont">&#xe7d8;</i>
               <input type="text" {...getField('userName')} />
@@ -56,9 +58,16 @@ class Login extends React.Component {
               <i className="iconfont">&#xe68c;</i>
               <input type="password" {...getField('password')} />
             </div>
+            <div className="input password">
+              <i className="iconfont">&#xe600;</i>
+              <Select placeholder="请选择下拉" style={{ width: '100%' }} {...getField('cycle')}>
+                <Option value="1">业务平台</Option>
+              </Select>
+            </div>
             <div className="error">{errorMsg ? <p className="errorMsg">{errorMsg}</p> : null}</div>
             <div className="input btn">
-              <input type="submit" value="登录" />
+              <span>登录</span>
+              <i className="iconfont">&#xe609;</i>
             </div>
           </section>
         </article>
