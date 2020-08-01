@@ -7,6 +7,7 @@ import { withRouter } from 'react-router-dom'
 import Header from '../../component/header/header'
 // import SliderBar from '../../component/sliderbar'
 // import MapContainer from '../../component/map_container'
+import { Routers } from '../../router/mian_router'
 import loginCheck from '../../component/hoc_component/login_check'
 import { loginOut } from '../../store/login.redux'
 import { initSearch } from '../../store/search.redux'
@@ -30,6 +31,7 @@ class Main extends React.Component {
     return (
       <section id="main" className="wrapper">
         <Header />
+        <Routers />
       </section>
     )
   }

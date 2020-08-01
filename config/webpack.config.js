@@ -401,11 +401,11 @@ module.exports = function(webpackEnv) {
                 compact: isEnvProduction
               }
             },
-            // 模块化zepto
-            {
-              test: require.resolve('zepto'),
-              use: ['exports-loader?window.Zepto', 'script-loader']
-            },
+            // // 模块化zepto
+            // {
+            //   test: require.resolve('zepto'),
+            //   use: ['exports-loader?window.Zepto', 'script-loader']
+            // },
             // Process any JS outside of the app with Babel.
             // Unlike the application JS, we only compile the standard ES features.
             {

@@ -7,7 +7,7 @@ import { createStore, compose, applyMiddleware } from 'redux'
 import { ConfigProvider } from 'antd'
 import zhCN from 'antd/es/locale/zh_CN'
 import reducer from './store/reducer'
-import { Routers } from './router/main_router'
+import { Routers } from './router/index_router'
 import { title } from './config/varibles'
 // eslint-disable-next-line import/no-unresolved
 import 'cesium/Source/Widgets/widgets.css'
