@@ -13,7 +13,7 @@ class HeaderLink extends React.Component {
       <ul className="header-link">
         {routerConfig.map((item) => (
           <li key={item.path} className={`nav-item ${item.path}`}>
-            <Link to={`${url}${item.path}`}>
+            <Link to={`${url}/${item.path}`}>
               <span className="nav-icon">
                 <img src={require(`../../static/images/${item.icon}`)} alt="" />
               </span>

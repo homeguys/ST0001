@@ -15,37 +15,37 @@ const WarnInfo = lazy(() => import(/* webpackChunkName: 'WarnInfo' */ '../../pag
 export default [
   {
     name: '河湖一张图',
-    path: '/riverPic',
+    path: 'riverPic',
     icon: 'icon_nav1.png',
     component: <RiverPicture />
   },
   {
     name: '动态监测',
-    path: '/dynamicMonitore',
+    path: 'dynamicMonitore',
     icon: 'icon_nav2.png',
     component: <DynamicMonitore />
   },
   {
     name: '批后监管',
-    path: '/supervision',
+    path: 'supervision',
     icon: 'icon_nav3.png',
     component: <Supervision />
   },
   {
     name: '数字档案',
-    path: '/digitalArchives',
+    path: 'digitalArchives',
     icon: 'icon_nav4.png',
     component: <DigitalArchives />
   },
   {
     name: '台账管理',
-    path: '/accountManage',
+    path: 'accountManage',
     icon: 'icon_nav5.png',
     component: <AccountManage />
   },
   {
     name: '预警信息',
-    path: '/warnInfo',
+    path: 'warnInfo',
     icon: 'icon_nav6.png',
     component: <WarnInfo />
   }

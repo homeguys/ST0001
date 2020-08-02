@@ -62,11 +62,21 @@
 
     .date {
       font-size: 0.2rem;
-      margin-bottom: 0.15rem;
+      margin-bottom: 0.1rem;
     }
 
     .user-name {
       font-size: 0.16rem;
+
+      i {
+        vertical-align: middle;
+        margin-right: 0.1rem;
+        font-size: 0.18rem;
+      }
+
+      span {
+        font-size: 0.16rem;
+      }
     }
   }
 }

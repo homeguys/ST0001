@@ -35,7 +35,14 @@ class Header extends React.Component {
     const { location } = this.props
     const { pathname } = location
     const path = pathname.split('/')
-    console.warn(path)
+
+    menus.forEach((item) => {
+      const itemClass = item.getAttribute('class').split(' ')[1]
+      const pathName = path[path.length - 1]
+      if (pathName === itemClass) {
+        setActive(menus, item, 'active')
+      }
+    })
   }
 
   render() {
@@ -45,7 +52,10 @@ class Header extends React.Component {
         <Links />
         <section className="sys-info">
           <section className="date">2020-05-26 15:00</section>
-          <section className="user-name">admin</section>
+          <section className="user-name">
+            <i className="iconfont">&#xe60e;</i>
+            <span>admin</span>
+          </section>
         </section>
       </section>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import Sliderbar from '../../../../component/sliderbar'
 import './style.scss'
 
 class RiverPicture extends React.Component {
@@ -8,7 +9,11 @@ class RiverPicture extends React.Component {
   }
 
   render() {
-    return <div id="riverPicture">riverPicture</div>
+    return (
+      <div id="riverPicture">
+        <Sliderbar />
+      </div>
+    )
   }
 }
 

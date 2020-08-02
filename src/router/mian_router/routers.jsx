@@ -13,11 +13,11 @@ class Routers extends React.Component {
       <div className="main-wrapper">
         <Switch>
           {routerConfig.map((item) => (
-            <Route path={`${url}${item.path}`} key={item.path}>
+            <Route path={`${url}/${item.path}`} key={item.path}>
               <Suspense fallback={<Spin size="large" />}>{item.component}</Suspense>
             </Route>
           ))}
-          <Redirect to={`${url}${routerConfig[0].path}`} />
+          <Redirect to={`${url}/${routerConfig[0].path}`} />
         </Switch>
       </div>
     )
