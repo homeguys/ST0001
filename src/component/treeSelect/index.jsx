@@ -11,21 +11,11 @@ const treeData = [
     children: [
       {
         title: '0-0-0',
-        key: '0-0-0',
-        children: [
-          { title: '0-0-0-0', key: '0-0-0-0' },
-          { title: '0-0-0-1', key: '0-0-0-1' },
-          { title: '0-0-0-2', key: '0-0-0-2' }
-        ]
+        key: '0-0-0'
       },
       {
         title: '0-0-1',
-        key: '0-0-1',
-        children: [
-          { title: '0-0-1-0', key: '0-0-1-0' },
-          { title: '0-0-1-1', key: '0-0-1-1' },
-          { title: '0-0-1-2', key: '0-0-1-2' }
-        ]
+        key: '0-0-1'
       },
       {
         title: '0-0-2',
@@ -48,7 +38,7 @@ const treeData = [
   }
 ]
 
-class Sliderbar extends React.Component {
+class TreeSelect extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -107,4 +97,4 @@ class Sliderbar extends React.Component {
   }
 }
 
-export default Sliderbar
+export default TreeSelect

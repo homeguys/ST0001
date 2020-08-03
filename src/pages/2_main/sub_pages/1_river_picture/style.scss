@@ -1,0 +1,19 @@
+#riverPicture {
+  display: flex;
+
+  .slider-bar {
+    width: 2rem;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .map-container {
+    flex: 1 1;
+  }
+
+  .info-box {
+    width: 3.25rem;
+    height: 100%;
+    overflow: hidden;
+  }
+}
