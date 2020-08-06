@@ -1,0 +1,82 @@
+#header {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  background: linear-gradient(0deg, rgba(0, 132, 208, 1), rgba(64, 235, 255, 1));
+  position: relative;
+
+  .sys-name {
+    font-size: 0.36rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1rem;
+    margin: 0 0.65rem 0 0.5rem;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      &.active,
+      &:hover {
+        background: #024861;
+      }
+
+      a {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0.35rem;
+        color: #fff;
+        cursor: pointer;
+
+        span {
+          &.nav-icon {
+            width: 0.55rem;
+            height: 0.5rem;
+            display: inline-block;
+            margin: 0.05rem 0;
+            text-align: center;
+
+            img {
+              max-height: 0.44rem;
+            }
+          }
+
+          &.nav-name {
+            font-size: 0.22rem;
+          }
+        }
+      }
+    }
+  }
+
+  .sys-info {
+    position: absolute;
+    right: 0.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+
+    .date {
+      font-size: 0.2rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .user-name {
+      font-size: 0.16rem;
+
+      i {
+        vertical-align: middle;
+        margin-right: 0.1rem;
+        font-size: 0.18rem;
+      }
+
+      span {
+        font-size: 0.16rem;
+      }
+    }
+  }
+}
