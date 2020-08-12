@@ -10,22 +10,16 @@ import Header from '../../component/header/header'
 import { Routers } from '../../router/mian_router'
 import loginCheck from '../../component/hoc_component/login_check'
 import { loginOut } from '../../store/login.redux'
-import { initSearch } from '../../store/search.redux'
 import './style.scss'
 
 const enhance = recompact.compose(
-  connect((state) => state.logining, { loginOut, initSearch }),
+  connect((state) => state.logining, { loginOut }),
   withRouter
   // loginCheck('main')
 )
 
 @enhance
 class Main extends React.Component {
-  componentWillUnmount() {
-    const { initSearch } = this.props
-    initSearch()
-  }
-
   render() {
     const { loginOut } = this.props
     return (

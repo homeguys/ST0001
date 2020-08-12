@@ -20,35 +20,6 @@
   .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after {
     background-image: none;
   }
-
-  // // table empty样式
-  // .ant-table-empty {
-  //   .ant-table-placeholder {
-  //     background: transparent;
-  //     border: none;
-
-  //     .ant-empty-normal {
-  //       color: #fff;
-  //     }
-  //   }
-  // }
-
-  .ant-select-selection {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-  }
-
-  .ant-select-arrow {
-    color: #fff;
-  }
-
-  .ant-select-focused .ant-select-selection,
-  .ant-select-selection:focus,
-  .ant-select-selection:active {
-    border-color: transparent;
-    box-shadow: none;
-  }
 }
 
 // infobar的searchlist和searchresult的共用head title
@@ -63,4 +34,178 @@
     border-left: 0.06rem solid #0179d5;
     padding-left: 0.2rem;
   }
+}
+
+// antd table 表头和内容居中
+@mixin tableTextCenter() {
+  .ant-table {
+    table {
+      tr {
+        th,
+        td {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// 查询条件表单样式
+@mixin searchBox() {
+  .ant-btn {
+    width: 1.1rem;
+    height: 0.35rem;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+
+    .ant-form-item {
+      margin-bottom: 0;
+      margin-right: 0.2rem;
+
+      .ant-form-item-label {
+        label {
+          font-size: 0.16rem;
+          color: #000;
+        }
+      }
+
+      .ant-btn {
+        background: rgba(23, 137, 189, 1);
+        margin-left: 0.2rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+// 全屏modal
+@mixin fullscreenModal() {
+  .ant-modal {
+    width: 100% !important;
+    height: calc(100% - 1rem) !important;
+    top: 1rem;
+    padding-bottom: 0;
+
+    .ant-modal-content {
+      height: 100%;
+
+      .ant-modal-body {
+        height: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+// modal edit标题样式
+@mixin modalEditTitle() {
+  .modal-edit-title {
+    position: relative;
+    font-size: 0.15rem;
+    color: #0f6598;
+    border-bottom: 0.02rem solid #c6e4fb;
+    line-height: 0.4rem;
+    font-weight: bold;
+    margin-bottom: 0.15rem;
+
+    i {
+      width: 0.78rem;
+      height: 0.04rem;
+      display: inline-block;
+      background: rgba(15, 101, 152, 1);
+      position: absolute;
+      bottom: -0.01rem;
+      left: 0;
+    }
+  }
+}
+
+// 批后监管添加 基本信息
+@mixin basicInfo() {
+  .basic-info {
+    .content {
+      .ant-form-horizontal {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 2rem;
+        background-color: #ededed;
+
+        .ant-form-item {
+          width: 100%;
+          height: 100%;
+          margin-bottom: 0;
+          margin-right: 0.15rem;
+
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+
+          .ant-form-item-label {
+            width: 1.4rem;
+            background-color: #e7f0fb;
+            padding: 0 0.05rem;
+
+            label {
+              width: 100%;
+              height: 100%;
+              font-size: 0.12rem;
+              display: flex;
+              align-items: center;
+
+              &::after {
+                content: '';
+              }
+
+              &::before {
+                content: '*';
+                color: red;
+              }
+
+              b {
+                color: red;
+              }
+            }
+          }
+
+          .ant-form-item-control {
+            background-color: #f0f8fb;
+            padding: 0 0.1rem;
+
+            .ant-form-item-control-input {
+              line-height: 0.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 批后监管添加 图斑录入
+@mixin PatchInput() {
+  .patch-input {
+  }
+}
+
+// 批后监管添加 动态监测
+@mixin DynamicDetection() {
+}
+
+// 批后监管添加 项目状态
+@mixin ProjectStatus() {
+}
+
+// 批后监管添加 批文摘要
+@mixin SummaryApproval() {
+}
+
+// 批后监管添加 档案信息
+@mixin ArchivalInfo() {
 }
