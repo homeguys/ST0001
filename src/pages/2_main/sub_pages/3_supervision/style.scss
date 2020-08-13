@@ -1,0 +1,108 @@
+@import '../../../../style/default.scss';
+
+#supervision {
+  padding: 0.2rem;
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    height: 0.65rem;
+    line-height: 0.65rem;
+    background: rgba(246, 248, 250, 1);
+    margin-bottom: 0.2rem;
+    padding: 0 0.2rem;
+
+    @include searchBox();
+  }
+
+  .result-table {
+    @include tableTextCenter();
+
+    .ant-table {
+      table {
+        tr {
+          th {
+            color: #000;
+            font-weight: bolder;
+          }
+
+          td {
+            .iconfont {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-edit {
+  @include fullscreenModal();
+
+  .ant-modal {
+    .ant-modal-content {
+      .ant-modal-close {
+        display: none;
+      }
+
+      .ant-modal-body {
+        padding: 0rem 0.15rem 0.7rem;
+        display: flex;
+        position: relative;
+
+        @include modalEditTitle();
+
+        .left {
+          width: 10rem;
+          margin-right: 0.35rem;
+          display: flex;
+          flex-direction: column;
+
+          @include basicInfo(); // 基本信息
+          @include PatchInput(); // 图斑录入
+        }
+
+        .right {
+          flex: 1 1;
+          display: flex;
+          flex-direction: column;
+
+          @include DynamicDetection(); // 动态监测
+          @include ProjectStatus(); // 项目状态
+          @include SummaryApproval(); // 批文摘要
+          @include ArchivalInfo(); // 档案信息
+        }
+
+        .btns {
+          position: absolute;
+          right: 0.2rem;
+          bottom: 0.2rem;
+
+          button {
+            width: 1.6rem;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            text-align: center;
+            display: inline-block;
+            border-radius: 0.08rem;
+            cursor: pointer;
+
+            &:nth-child(1) {
+              background: #1789bd;
+              color: #fff;
+              margin-right: 0.2rem;
+            }
+
+            &:nth-child(2) {
+              color: #1789bd;
+              background: #fff;
+              border: 1px solid #eee;
+              margin-right: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

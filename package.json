@@ -8,7 +8,11 @@
     "/lib"
   ],
   "dependencies": {
+<<<<<<< HEAD
     "antd": "^3.26.3",
+=======
+    "antd": "^4.5.3",
+>>>>>>> babc643dbabd0d8d6033f5413a8eb624590d549e
     "axios": "^0.19.0",
     "cesium": "1.67.0",
     "echarts": "^4.5.0",

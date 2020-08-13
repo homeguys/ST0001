@@ -83,6 +83,25 @@
             letter-spacing: 0.05rem;
           }
         }
+<<<<<<< HEAD
+=======
+
+        .ant-select-arrow {
+          color: #fff;
+        }
+
+        .ant-select-selector {
+          background-color: transparent;
+          border: none;
+          color: #fff;
+          text-align: left;
+        }
+
+        .ant-select-focused.ant-select-single:not(.ant-select-customize-input)
+          .ant-select-selector {
+          box-shadow: none;
+        }
+>>>>>>> babc643dbabd0d8d6033f5413a8eb624590d549e
       }
 
       .remember {
