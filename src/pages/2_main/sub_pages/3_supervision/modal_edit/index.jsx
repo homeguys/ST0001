@@ -29,6 +29,12 @@ function ModalEdit(props) {
         <SummaryApproval />
         <ArchivalInfo />
       </section>
+      <section className="btns">
+        <button type="button">提交</button>
+        <button type="button" onClick={handleCancel}>
+          取消
+        </button>
+      </section>
     </Modal>
   )
 }

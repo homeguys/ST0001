@@ -25,6 +25,8 @@ function PatchInput() {
           </section>
         </section>
       </section>
+
+      <section className="input-map" />
     </section>
   )
 }

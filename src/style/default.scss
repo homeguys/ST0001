@@ -107,9 +107,10 @@
     font-size: 0.15rem;
     color: #0f6598;
     border-bottom: 0.02rem solid #c6e4fb;
+    height: 0.4rem;
     line-height: 0.4rem;
     font-weight: bold;
-    margin-bottom: 0.15rem;
+    margin: 0.15rem 0;
 
     i {
       width: 0.78rem;
@@ -120,12 +121,21 @@
       bottom: -0.01rem;
       left: 0;
     }
+
+    button {
+      float: right;
+      cursor: pointer;
+      position: relative;
+      top: 0.1rem;
+    }
   }
 }
 
 // 批后监管添加 基本信息
 @mixin basicInfo() {
   .basic-info {
+    flex-basis: 2.55rem;
+
     .content {
       .ant-form-horizontal {
         display: grid;
@@ -191,9 +201,15 @@
 // 批后监管添加 图斑录入
 @mixin PatchInput() {
   .patch-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+
     .upload {
       display: flex;
       justify-content: space-between;
+      height: 0.32rem;
+      margin-bottom: 0.18rem;
 
       .upload-item {
         width: 3.7rem;
@@ -203,7 +219,7 @@
 
         .upload-item-title {
           display: inline-block;
-          width: 1.2rem;
+          min-width: 1.2rem;
           height: 0.3rem;
           line-height: 0.3rem;
           background: #ebebeb;
@@ -247,21 +263,114 @@
         }
       }
     }
+
+    .input-map {
+      flex: 1 1;
+      background: url('../static/images/bg_input_map.jpg') no-repeat center;
+      background-size: cover;
+    }
   }
 }
 
 // 批后监管添加 动态监测
 @mixin DynamicDetection() {
+  .dynamic-detection {
+    flex-basis: 2rem;
+    flex-grow: 1;
+
+    .content {
+      table {
+        .ant-table-thead,
+        .ant-table-tbody {
+          tr {
+            th,
+            td {
+              padding: 0;
+              height: 0.32rem;
+              line-height: 0.32rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // 批后监管添加 项目状态
 @mixin ProjectStatus() {
+  .project-status {
+    flex-basis: 1rem;
+    flex-grow: 1;
+
+    .content {
+      .ant-radio-group {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
 }
 
 // 批后监管添加 批文摘要
 @mixin SummaryApproval() {
+  .summary-approval {
+    flex-basis: 2.45rem;
+    flex-grow: 1;
+
+    .content {
+      height: calc(100% - 0.7rem);
+
+      ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          border-bottom: 1px solid #eee;
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
 }
 
 // 批后监管添加 档案信息
 @mixin ArchivalInfo() {
+  .archival-info {
+    flex-basis: 2.95rem;
+    flex-grow: 1;
+
+    .content {
+      table {
+        .ant-table-thead,
+        .ant-table-tbody {
+          tr {
+            th,
+            td {
+              padding: 0;
+              height: 0.36rem;
+              line-height: 0.36rem;
+            }
+          }
+        }
+
+        .ant-table-tbody {
+          tr {
+            td {
+              &:nth-child(1) {
+                text-align: left !important;
+                padding: 0 0.12rem;
+                max-width: 1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
