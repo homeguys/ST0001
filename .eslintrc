@@ -29,11 +29,7 @@
     "no-debugger": "off",
     "no-shadow": "off",
     "operator-linebreak": "off",
-<<<<<<< HEAD
-    "jsx-a11y/no-static-element-interactions": "warn"
-=======
     "jsx-a11y/no-static-element-interactions": "warn",
     "react/display-name": "off"
->>>>>>> babc643dbabd0d8d6033f5413a8eb624590d549e
   }
 }

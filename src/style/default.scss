@@ -20,38 +20,6 @@
   .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow::after {
     background-image: none;
   }
-<<<<<<< HEAD
-
-  // // table empty样式
-  // .ant-table-empty {
-  //   .ant-table-placeholder {
-  //     background: transparent;
-  //     border: none;
-
-  //     .ant-empty-normal {
-  //       color: #fff;
-  //     }
-  //   }
-  // }
-
-  .ant-select-selection {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-  }
-
-  .ant-select-arrow {
-    color: #fff;
-  }
-
-  .ant-select-focused .ant-select-selection,
-  .ant-select-selection:focus,
-  .ant-select-selection:active {
-    border-color: transparent;
-    box-shadow: none;
-  }
-=======
->>>>>>> babc643dbabd0d8d6033f5413a8eb624590d549e
 }
 
 // infobar的searchlist和searchresult的共用head title
@@ -67,8 +35,6 @@
     padding-left: 0.2rem;
   }
 }
-<<<<<<< HEAD
-=======
 
 // antd table 表头和内容居中
 @mixin tableTextCenter() {
@@ -408,4 +374,3 @@
     }
   }
 }
->>>>>>> babc643dbabd0d8d6033f5413a8eb624590d549e

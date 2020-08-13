@@ -1,20 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-import './style.scss'
-
-class Supervision extends React.Component {
-  constructor(props) {
-    super(props)
-    this.name = 'wanglei'
-  }
-
-  render() {
-    return <div id="supervision">Supervision</div>
-  }
-}
-
-export default Supervision
-=======
 import { connect } from 'react-redux'
 import { Space } from 'antd'
 import SearchBox from './search_box'
@@ -224,4 +208,3 @@ function Supervision(props) {
 export default connect((state) => ({ supervision: state.supervision }), { changeSupervisionSin })(
   Supervision
 )
->>>>>>> babc643dbabd0d8d6033f5413a8eb624590d549e
