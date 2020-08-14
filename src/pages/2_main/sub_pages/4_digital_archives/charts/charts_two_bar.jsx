@@ -20,7 +20,7 @@ function ChartsBar() {
       legend: {
         orient: 'horizontal',
         top: 15,
-        right: 10,
+        left: 10,
         data: ['审批占图', '审批补偿']
       },
       grid: {
