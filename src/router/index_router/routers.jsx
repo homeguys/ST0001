@@ -5,7 +5,7 @@ import routerConfig from './router_config'
 
 export default function Routers() {
   return (
-    <div className="main-wrapper">
+    <div className="index-wrapper">
       <Switch>
         {routerConfig.map((item) => (
           <Route path={item.path} key={item.path}>

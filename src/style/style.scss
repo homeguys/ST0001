@@ -16,14 +16,22 @@ body,
 }
 
 #root {
-  .main-wrapper {
-    width: 100%;
+  .index-wrapper {
     height: 100%;
-    overflow: hidden;
 
-    .login-check,
-    .wrapper {
+    #main {
       height: 100%;
+
+      .main-wrapper {
+        width: 100%;
+        height: calc(100% - 1rem);
+        overflow: hidden;
+
+        .login-check,
+        .wrapper {
+          height: 100%;
+        }
+      }
     }
   }
 }

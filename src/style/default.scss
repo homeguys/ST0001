@@ -203,6 +203,8 @@
   .patch-input {
     display: flex;
     flex-direction: column;
+    // flex-basis: 5rem;
+    height: 5rem;
     flex: 1 1;
 
     .upload {

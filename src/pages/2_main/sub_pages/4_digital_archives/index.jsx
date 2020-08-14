@@ -1,11 +1,16 @@
 import React from 'react'
+import Statistic from './statistic'
+import ArchivalInfoShow from './archival_info'
 import './style.scss'
 
 function DigitalArchives() {
   return (
     <section id="digital-archives">
-      <section className="bar">aa</section>
-      <section className="bar">bb</section>
+      <section className="left">aa</section>
+      <section className="right">
+        {/* <Statistic /> */}
+        <ArchivalInfoShow />
+      </section>
     </section>
   )
 }
