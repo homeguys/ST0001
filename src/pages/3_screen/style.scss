@@ -1,0 +1,256 @@
+@mixin ulStyle() {
+  ul {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    padding: 0 0.05rem 0.1rem;
+
+    li {
+      flex-basis: 33.333%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0.12rem;
+      background: #071d3d;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 0.08rem;
+        height: 0.01rem;
+        background: #2a68c4;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 0.08rem;
+        height: 0.01rem;
+        background: #2a68c4;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .text {
+        font-size: 0.18rem;
+        color: rgba(178, 228, 243, 1);
+        margin-bottom: 0.1rem;
+      }
+
+      .num {
+        color: rgba(52, 168, 208, 1);
+        font-size: 0.16rem;
+
+        i {
+          font-style: normal;
+          font-size: 0.24rem;
+        }
+      }
+    }
+  }
+}
+
+#screen {
+  height: 100%;
+  background: #000f24;
+
+  header {
+    width: 100%;
+    height: 1.03rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../../static/images/bg_screen_header.png') no-repeat center;
+    text-align: center;
+    background-size: cover;
+
+    .title {
+      font-size: 0.36rem;
+      font-weight: bolder;
+      background: linear-gradient(to bottom, rgba(140, 224, 255, 1), rgba(255, 255, 255, 1));
+      -webkit-background-clip: text;
+      color: transparent;
+      line-height: 1rem;
+    }
+
+    .date {
+      position: absolute;
+      left: 1rem;
+      top: 0.1rem;
+      color: rgba(136, 193, 211, 1);
+      font-size: 0.18rem;
+    }
+
+    .login-btn {
+      position: absolute;
+      right: 1.2rem;
+      top: 0.1rem;
+      color: #fff;
+      font-size: 0.15rem;
+      cursor: pointer;
+      background: url('../../static/images/icon_screen_login.png') no-repeat left center;
+      background-size: contain;
+      padding-left: 0.26rem;
+      display: inline-block;
+    }
+  }
+
+  & > .content {
+    width: 100%;
+    height: calc(100% - 0.4rem);
+    color: #fff;
+    padding: 0.65rem 0.4rem 0;
+    display: flex;
+
+    .left,
+    .right {
+      flex-basis: 4.15rem;
+      display: flex;
+      flex-direction: column;
+
+      .block {
+        margin-bottom: 0.15rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 0.18rem;
+          padding: 0.08rem 0;
+
+          &::before {
+            content: '';
+            width: 0.05rem;
+            height: 0.25rem;
+            display: inline-block;
+            background: linear-gradient(0deg, rgba(92, 234, 254, 1), rgba(52, 164, 255, 1));
+            border-radius: 0.025rem;
+            vertical-align: middle;
+            margin-right: 0.15rem;
+          }
+        }
+
+        & > .content {
+          flex: 1 1;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .block {
+      border: 0.01rem solid #2c689e;
+      box-shadow: inset #0a4174 0px 0px 5px 2px;
+
+      &::before {
+        content: '';
+        width: 100%;
+        height: 0.01rem;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(120, 209, 255, 0),
+          rgba(120, 209, 255, 0.97),
+          rgba(120, 209, 255, 0)
+        );
+      }
+    }
+
+    .left {
+      .monitor {
+        height: 1.5rem;
+
+        .content {
+          display: flex;
+
+          @include ulStyle();
+        }
+      }
+
+      .status {
+        flex-basis: 4.5rem;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+
+          .top {
+            flex: 1 1;
+            display: flex;
+            flex-direction: column;
+
+            ul {
+              flex: 1 1;
+              display: flex;
+              flex-wrap: wrap;
+
+              li {
+                flex-basis: 31.65%;
+                margin-right: 0.1rem;
+
+                &:nth-child(3n) {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+
+          .bottom {
+            height: 1.5rem;
+            display: flex;
+            flex-direction: column;
+
+            @include ulStyle();
+          }
+        }
+      }
+
+      .video {
+        flex-basis: 3.5rem;
+      }
+    }
+
+    .right {
+      display: flex;
+
+      .standard {
+        flex-basis: 2.24rem;
+      }
+
+      .ratio {
+        flex-basis: 2.5rem;
+      }
+
+      .analyse {
+        flex-basis: 2.12rem;
+      }
+
+      .statistics {
+        flex-basis: 2.4rem;
+      }
+    }
+
+    .map {
+      flex: 1 1;
+      margin: 0.7rem 0.4rem 0;
+      position: relative;
+    }
+  }
+}

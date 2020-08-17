@@ -19,6 +19,14 @@ body,
   .index-wrapper {
     height: 100%;
 
+    .login-check {
+      height: 100%;
+
+      #login {
+        height: 100%;
+      }
+    }
+
     #main {
       height: 100%;
 
@@ -27,7 +35,6 @@ body,
         height: calc(100% - 1rem);
         overflow: hidden;
 
-        .login-check,
         .wrapper {
           height: 100%;
         }

@@ -6,6 +6,7 @@ import React, { lazy } from 'react'
 
 const Login = lazy(() => import(/* webpackChunkName: '1_login' */ '../../pages/1_login'))
 const Main = lazy(() => import(/* webpackChunkName: '2_main' */ '../../pages/2_main'))
+const Screen = lazy(() => import(/* webpackChunkName: '3_screen' */ '../../pages/3_screen'))
 
 export default [
   {
@@ -14,8 +15,13 @@ export default [
     component: <Login />
   },
   {
-    name: '组件',
+    name: '主页',
     path: '/main',
     component: <Main />
+  },
+  {
+    name: '大屏',
+    path: '/screen',
+    component: <Screen />
   }
 ]
