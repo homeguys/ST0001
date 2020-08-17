@@ -17,7 +17,7 @@ function Status() {
               </span>
             </li>
             <li>
-              <span className="text">省级河道</span>
+              <span className="text">市级河道</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
                 <span>67</span>
@@ -25,7 +25,7 @@ function Status() {
               </span>
             </li>
             <li>
-              <span className="text">省级河道</span>
+              <span className="text">乡级河道</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
                 <span>67</span>
@@ -33,7 +33,7 @@ function Status() {
               </span>
             </li>
             <li>
-              <span className="text">省级河道</span>
+              <span className="text">山塘</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
                 <span>67</span>
@@ -41,7 +41,7 @@ function Status() {
               </span>
             </li>
             <li>
-              <span className="text">省级河道</span>
+              <span className="text">水库</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
                 <span>67</span>
@@ -49,7 +49,7 @@ function Status() {
               </span>
             </li>
             <li>
-              <span className="text">省级河道</span>
+              <span className="text">湖泊</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
                 <span>67</span>
