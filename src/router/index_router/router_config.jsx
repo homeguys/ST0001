@@ -10,6 +10,11 @@ const Screen = lazy(() => import(/* webpackChunkName: '3_screen' */ '../../pages
 
 export default [
   {
+    name: '大屏',
+    path: '/screen',
+    component: <Screen />
+  },
+  {
     name: '登录',
     path: '/login',
     component: <Login />
@@ -18,10 +23,5 @@ export default [
     name: '主页',
     path: '/main',
     component: <Main />
-  },
-  {
-    name: '大屏',
-    path: '/screen',
-    component: <Screen />
   }
 ]

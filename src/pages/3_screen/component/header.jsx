@@ -3,7 +3,7 @@ import React from 'react'
 function Header(props) {
   function jumpLogin() {
     const { push } = props
-    push('/index')
+    push('/login')
   }
 
   return (

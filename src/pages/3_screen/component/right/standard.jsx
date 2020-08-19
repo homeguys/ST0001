@@ -11,16 +11,16 @@ function Standard() {
             <span>5.44%</span>
           </li>
           <li>
-            <span>规划水面率</span>
+            <span>规划水域面积</span>
+            <span>75.32%</span>
+          </li>
+          <li>
+            <span>即时水面率</span>
             <span>5.44%</span>
           </li>
           <li>
-            <span>规划水面率</span>
-            <span>5.44%</span>
-          </li>
-          <li>
-            <span>规划水面率</span>
-            <span>5.44%</span>
+            <span>即时水域面积</span>
+            <span>71.52%</span>
           </li>
         </ul>
       </section>

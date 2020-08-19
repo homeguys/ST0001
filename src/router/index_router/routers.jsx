@@ -12,7 +12,7 @@ export default function Routers() {
             <Suspense fallback={<Spin size="large" />}>{item.component}</Suspense>
           </Route>
         ))}
-        <Redirect to="/login" />
+        <Redirect to="/screen" />
       </Switch>
     </div>
   )

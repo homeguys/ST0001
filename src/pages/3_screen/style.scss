@@ -286,7 +286,7 @@
 
         .content {
           display: flex;
-          padding: 0.2rem 0.05rem;
+          padding: 0.2rem 0.15rem;
 
           ul {
             height: 100%;
@@ -301,14 +301,31 @@
 
               &:nth-child(2n) {
                 margin-right: 0;
+
+                span {
+                  &:nth-child(2) {
+                    background: rgba(207, 138, 22, 0.2);
+                    color: #fca806;
+                  }
+                }
               }
 
               span {
+                &:nth-child(1) {
+                  font-size: 0.12rem;
+                  display: inline-block;
+                  width: 0.75rem;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+
                 &:nth-child(2) {
                   display: inline-block;
-                  width: 1.1rem;
+                  width: 1.05rem;
                   height: 0.42rem;
-                  background: rgba(43, 104, 197, 1);
+                  background: rgba(42, 104, 196, 0.2);
+                  color: #03aaee;
                   text-align: center;
                   line-height: 0.42rem;
                   font-size: 0.26rem;
