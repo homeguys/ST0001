@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom'
 import Header from './component/header'
 import Monitor from './component/left/monitor'
 import Status from './component/left/status'
+import StatusModal from './component/left/status_modal'
 import Video from './component/left/video'
 import Standard from './component/right/standard'
 import Ratio from './component/right/ratio'
@@ -23,7 +24,9 @@ function Screen(props) {
       <section className="content">
         <section className="left">
           <Monitor />
-          <Status />
+          <Status>
+            <StatusModal />
+          </Status>
           <Video />
         </section>
         <section className="map block">map</section>

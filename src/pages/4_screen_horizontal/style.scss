@@ -1,0 +1,9 @@
+@import '../3_screen/style.scss';
+
+.screen-horizontal {
+  & > .content {
+    .map {
+      @include statusModal();
+    }
+  }
+}

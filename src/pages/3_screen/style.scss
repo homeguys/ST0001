@@ -61,6 +61,90 @@
   }
 }
 
+@mixin statusModal() {
+  .status-modal {
+    width: 6.9rem;
+    position: absolute;
+    right: -4rem;
+    top: 0;
+    background: #000203;
+    padding: 0 0.2rem 0.2rem;
+    opacity: 0;
+    transition: all 1s;
+
+    &.active {
+      opacity: 1;
+      right: -7.3rem;
+      z-index: 99;
+    }
+
+    button.close {
+      position: absolute;
+      cursor: pointer;
+      top: 0.1rem;
+      right: 0.1rem;
+      z-index: 1;
+    }
+
+    .sub-title {
+      line-height: 0.4rem;
+      font-size: 0.16rem;
+
+      span {
+        padding: 0 0.1rem;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 0.02rem;
+          height: 0.16rem;
+          background: #fbc016;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        &::after {
+          content: '';
+          width: 0.02rem;
+          height: 0.16rem;
+          background: #fbc016;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+
+    .top-table {
+      margin-bottom: 0.3rem;
+    }
+
+    .ant-table {
+      color: #fff;
+      background: #01121d;
+
+      .ant-table-thead > tr > th {
+        background: #013550;
+        color: #fff;
+      }
+
+      .ant-table-tbody > tr.ant-table-row:hover > td {
+        color: #000;
+      }
+
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td,
+      .ant-table tfoot > tr > th,
+      .ant-table tfoot > tr > td {
+        padding: 0 0.05rem;
+        line-height: 0.3rem;
+        border-bottom: 0.06rem solid #000203;
+      }
+    }
+  }
+}
+
 #screen {
   height: 100%;
   background: #000f24;
@@ -173,6 +257,8 @@
     }
 
     .left {
+      position: relative;
+
       .monitor {
         height: 1.5rem;
 
@@ -185,6 +271,7 @@
 
       .status {
         flex-basis: 4.5rem;
+        position: relative;
 
         .content {
           display: flex;
@@ -195,6 +282,26 @@
             flex: 1 1;
             display: flex;
             flex-direction: column;
+
+            .title {
+              position: relative;
+
+              button {
+                width: 0.2rem;
+                height: 0.2rem;
+                background: url('../../static/images/icon_screen_out.png') no-repeat center;
+                background-size: cover;
+                cursor: pointer;
+                position: absolute;
+                right: 0.2rem;
+                top: 0.1rem;
+                transition: all 1s;
+
+                &.active {
+                  transform: rotate(180deg);
+                }
+              }
+            }
 
             ul {
               flex: 1 1;
@@ -232,6 +339,8 @@
             @include ulStyle();
           }
         }
+
+        @include statusModal();
       }
 
       .video {

@@ -1,12 +1,24 @@
 import React from 'react'
 import { Progress } from 'antd'
 
-function Status() {
+function Status(props) {
+  const { type, children } = props
+
+  const showStatusModal = (e) => {
+    e.target.classList.toggle('active')
+    const statusModal = document.querySelector('.status-modal')
+    statusModal.classList.toggle('active')
+  }
+
   return (
     <section className="block status">
+      {children}
       <section className="content">
         <section className="top">
-          <section className="title">水域现状</section>
+          <section className="title">
+            水域现状
+            {type !== 'horizon' ? <button type="button" onClick={showStatusModal} /> : null}
+          </section>
           <ul>
             <li>
               <span className="text">省级河道</span>
