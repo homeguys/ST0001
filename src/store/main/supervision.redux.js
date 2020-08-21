@@ -33,7 +33,7 @@ startTime.setFullYear(startYear)
 // const pageNum = 1
 
 const initState = {
-  editModalVisible: true
+  editModalVisible: false
 }
 
 export function supervision(state = initState, action) {

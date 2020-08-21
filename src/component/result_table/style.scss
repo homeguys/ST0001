@@ -1,0 +1,21 @@
+.result-table {
+  ul.nav-title {
+    display: flex;
+
+    li {
+      width: 2rem;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      background: #e5e5e5;
+      color: #000;
+      font-size: 0.2rem;
+      text-align: center;
+      cursor: pointer;
+
+      &.active {
+        background: #1789bd;
+        color: #fff;
+      }
+    }
+  }
+}

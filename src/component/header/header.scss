@@ -13,7 +13,7 @@
     margin: 0 0.65rem 0 0.5rem;
   }
 
-  ul {
+  ul.header-link {
     display: flex;
 
     li {
@@ -67,6 +67,10 @@
 
     .user-name {
       font-size: 0.16rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
 
       i {
         vertical-align: middle;
@@ -76,6 +80,50 @@
 
       span {
         font-size: 0.16rem;
+      }
+
+      span.icon-arrow-down {
+        display: inline-block;
+        margin-left: 0.1rem;
+        border: 0.05rem solid;
+        border-color: #fff transparent transparent;
+        position: relative;
+        top: 0.03rem;
+      }
+    }
+  }
+
+  .user-setting {
+    width: 1.4rem;
+    background: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 0.2rem;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: -1;
+
+    &.active {
+      opacity: 1;
+      z-index: 99;
+    }
+
+    ul {
+      li {
+        line-height: 0.55rem;
+        border-bottom: 0.01rem solid #eee;
+        color: #000;
+        padding: 0 0.2rem;
+        cursor: pointer;
+
+        &:hover {
+          background: #024861;
+          color: #fff;
+        }
+
+        span.iconfont {
+          margin-right: 0.15rem;
+        }
       }
     }
   }

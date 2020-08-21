@@ -1,15 +1,22 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Form, Input, Select, Button, Space } from 'antd'
+import { changeSupervisionSin } from '../../../../store/main/supervision.redux'
 
 const { Option } = Select
 
-function SearchBox() {
+function SearchBox(props) {
+  const { changeSupervisionSin } = props
   const onFinish = (values) => {
     console.warn('Success:', values)
   }
 
   const onFinishFailed = (errorInfo) => {
     console.warn('Failed:', errorInfo)
+  }
+
+  const addProject = () => {
+    changeSupervisionSin(['editModalVisible', true])
   }
 
   return (
@@ -48,10 +55,12 @@ function SearchBox() {
 
       <Space>
         <Button>批量导入</Button>
-        <Button>添加项目</Button>
+        <Button onClick={addProject}>添加项目</Button>
       </Space>
     </section>
   )
 }
 
-export default SearchBox
+export default connect((state) => ({ supervision: state.supervision }), { changeSupervisionSin })(
+  SearchBox
+)

@@ -21,8 +21,8 @@ function DigitalArchives() {
         <Sliderbar dataSource={menuData} />
       </section>
       <section className="right">
-        {/* <Statistic /> */}
-        <ArchivalInfoShow />
+        <Statistic />
+        {/* <ArchivalInfoShow /> */}
       </section>
     </section>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Space } from 'antd'
+import { Space, Popconfirm } from 'antd'
 import SearchBox from './search_box'
 import ResultTable from '../../../../component/result_table'
 import ModalEdit from './modal_edit'
@@ -188,9 +188,11 @@ function Supervision(props) {
           <button type="button" className="iconfont" onClick={handleEdit}>
             &#xe612;
           </button>
-          <button type="button" className="iconfont" onClick={handleDelete}>
-            &#xe61e;
-          </button>
+          <Popconfirm title="确认删除?" onConfirm={() => this.handleDelete(record.key)}>
+            <button type="button" className="iconfont">
+              &#xe61e;
+            </button>
+          </Popconfirm>
         </Space>
       )
     }
@@ -199,7 +201,7 @@ function Supervision(props) {
   return (
     <div id="supervision">
       <SearchBox />
-      <ResultTable columns={columns} dataSource={data} rowClassName="aa" />
+      <ResultTable columns={columns} dataSource={data} rowClassName="result-table" />
       <ModalEdit visible={editModalVisible} handleOk={handleOk} handleCancel={handleCancel} />
     </div>
   )
