@@ -1,0 +1,124 @@
+{
+  "status": 200,
+  "code": "0",
+  "data": [
+    {
+      "name": "2017年",
+      "key": "2017",
+      "icon": "mail",
+      "children": [
+        {
+          "name": "第一季度",
+          "key": "2017_1",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第二季度",
+          "key": "2017_2",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第三季度",
+          "key": "2017_3",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第四季度",
+          "key": "2017_4",
+          "icon": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "name": "2018年",
+      "key": "2018",
+      "icon": "appstore",
+      "children": [
+        {
+          "name": "第一季度",
+          "key": "2018_1",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第二季度",
+          "key": "2018_2",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第三季度",
+          "key": "2018_3",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第四季度",
+          "key": "2018_4",
+          "icon": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "name": "2019年",
+      "key": "2019",
+      "icon": "setting",
+      "children": [
+        {
+          "name": "第一季度",
+          "key": "2019_1",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第二季度",
+          "key": "2019_2",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第三季度",
+          "key": "2019_3",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第四季度",
+          "key": "2019_4",
+          "icon": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "name": "2020年",
+      "key": "2020",
+      "icon": "setting",
+      "children": [
+        {
+          "name": "第一季度",
+          "key": "2020_1",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第二季度",
+          "key": "2020_2",
+          "icon": "",
+          "children": null
+        },
+        {
+          "name": "第三季度",
+          "key": "2020_3",
+          "icon": "",
+          "children": null
+        }
+      ]
+    }
+  ]
+}

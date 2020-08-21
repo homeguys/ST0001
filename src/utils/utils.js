@@ -338,3 +338,29 @@ export function getParents(el, parent = '') {
 
   return p
 }
+
+/**
+ * 数组对象提取某个键值的数据至新数组
+ * @param {*} arr 数组对象
+ * @param {*} key 判断的键
+ */
+export function extractArrayData(data, key) {
+  const c = []
+  const d = {}
+  data.forEach((element) => {
+    if (!d[element[key]]) {
+      c.push({
+        category: element[key],
+        allData: [element]
+      })
+      d[element[key]] = element
+    } else {
+      c.forEach((ele) => {
+        if (ele[key] === element[key]) {
+          ele.allData.push(element)
+        }
+      })
+    }
+  })
+  return c
+}

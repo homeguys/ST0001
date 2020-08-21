@@ -1,0 +1,170 @@
+{
+  "status": 200,
+  "code": "0",
+  "data": {
+    "2017_1": {
+      "report": {
+        "content": "江苏省海洋与渔业局： 2017年第一季度通过国家海洋环境监测中心12月21日GF-2、CB04卫星图像（4m、20m分辨率）监测结果，在近暗海域监测到马尾藻分布，分布面积约为 12.6平方公里，最近距岸约2.5公里。具体分布范围和坐标详见图1、图2。",
+        "infoUrl": "http://localhost/GIS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AE%B2%E8%A7%A3.pdf"
+      },
+      "statisticData": [
+        {
+          "name": "违建",
+          "value": 40,
+          "category": ""
+        },
+        {
+          "name": "审批",
+          "value": 45,
+          "category": ""
+        },
+        {
+          "name": "未批先建",
+          "value": 10,
+          "category": ""
+        },
+        {
+          "name": "其他",
+          "value": 5,
+          "category": ""
+        }
+      ],
+      "distributionData": [
+        {
+          "name": "德清县",
+          "value": 320
+        },
+        {
+          "name": "武康街道",
+          "value": 54
+        },
+        {
+          "name": "舞阳街道",
+          "value": 1200
+        },
+        {
+          "name": "阜溪街道",
+          "value": 1600
+        },
+        {
+          "name": "下渚湖街道",
+          "value": 600
+        },
+        {
+          "name": "乾元镇",
+          "value": 490
+        },
+        {
+          "name": "新市镇",
+          "value": 290
+        },
+        {
+          "name": "洛舍镇",
+          "value": 490
+        },
+        {
+          "name": "钟管镇",
+          "value": 190
+        },
+        {
+          "name": "雷甸镇",
+          "value": 790
+        },
+        {
+          "name": "禹越镇",
+          "value": 324
+        },
+        {
+          "name": "新安镇",
+          "value": 624
+        },
+        {
+          "name": "莫干山镇",
+          "value": 824
+        }
+      ]
+    },
+    "2017_2": {
+      "report": {
+        "content": "江苏省海洋与渔业局： 2017年第二季度通过国家海洋环境监测中心12月21日GF-2、CB04卫星图像（4m、20m分辨率）监测结果，在近暗海域监测到马尾藻分布，分布面积约为 12.6平方公里，最近距岸约2.5公里。具体分布范围和坐标详见图1、图2。",
+        "infoUrl": "http://localhost/GIS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AE%B2%E8%A7%A3.pdf"
+      },
+      "statisticData": [
+        {
+          "name": "违建",
+          "value": 46,
+          "category": ""
+        },
+        {
+          "name": "审批",
+          "value": 42,
+          "category": ""
+        },
+        {
+          "name": "未批先建",
+          "value": 30,
+          "category": ""
+        },
+        {
+          "name": "其他",
+          "value": 15,
+          "category": ""
+        }
+      ],
+      "distributionData": [
+        {
+          "name": "德清县",
+          "value": 1620
+        },
+        {
+          "name": "武康街道",
+          "value": 540
+        },
+        {
+          "name": "舞阳街道",
+          "value": 1500
+        },
+        {
+          "name": "阜溪街道",
+          "value": 1600
+        },
+        {
+          "name": "下渚湖街道",
+          "value": 600
+        },
+        {
+          "name": "乾元镇",
+          "value": 490
+        },
+        {
+          "name": "新市镇",
+          "value": 590
+        },
+        {
+          "name": "洛舍镇",
+          "value": 890
+        },
+        {
+          "name": "钟管镇",
+          "value": 190
+        },
+        {
+          "name": "雷甸镇",
+          "value": 790
+        },
+        {
+          "name": "禹越镇",
+          "value": 124
+        },
+        {
+          "name": "新安镇",
+          "value": 624
+        },
+        {
+          "name": "莫干山镇",
+          "value": 824
+        }
+      ]
+    }
+  }
+}

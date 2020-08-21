@@ -1,0 +1,17 @@
+.table-info {
+  padding: 0 0.05rem;
+  .ant-table-thead > tr > th {
+    background-color: #F8F8F9;
+  }
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td,
+  .ant-table tfoot > tr > th,
+  .ant-table tfoot > tr > td {
+    padding: 10px 6px;
+    text-align: center;
+
+    .ant-btn {
+      padding: 4px 6px;
+    }
+  }
+}

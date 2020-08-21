@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React from 'react'
 import { Menu, Icon } from 'antd'
+import './style.scss'
 
 const { SubMenu } = Menu
 
@@ -9,7 +10,7 @@ class SiderBar extends React.Component {
   rootSubmenuKeys = ['sub1', 'sub2', 'sub4']
 
   state = {
-    openKeys: ['sub1']
+    openKeys: ['2017']
   }
 
   onOpenChange = (openKeys) => {
@@ -23,58 +24,60 @@ class SiderBar extends React.Component {
     }
   }
 
+  handleClick = (e, op) => {
+    const titleIssue = e.key.split('_')[0] + '年' + e.item.props.children
+    this.props.changeIssue(e.key, titleIssue)
+  }
+
   render() {
+    const { dataSource = [] } = this.props
     return (
       <Menu
         mode="inline"
         openKeys={this.state.openKeys}
         onOpenChange={this.onOpenChange}
+        onClick={this.handleClick}
         style={{ width: 256 }}
       >
-        <SubMenu
-          key="sub1"
-          title={
-            <span>
-              <Icon type="mail" />
-              <span>Navigation One</span>
-            </span>
+        {dataSource.map((firstItem) => {
+          if (firstItem.children) {
+            return (
+              <SubMenu
+                key={firstItem.key}
+                title={
+                  <span>
+                    <Icon type={firstItem.icon} />
+                    <span>{firstItem.name}</span>
+                  </span>
+                }
+              >
+                {firstItem.children.map((secondItem) => {
+                  if (secondItem.children) {
+                    return (
+                      <SubMenu
+                        key={secondItem.key}
+                        title={
+                          <span>
+                            <Icon type={secondItem.icon} />
+                            <span>{secondItem.name}</span>
+                          </span>
+                        }
+                      >
+                        {secondItem.children.map((thirdItem) => {
+                          return <Menu.Item key={thirdItem.key}>{thirdItem.name}</Menu.Item>
+                        })}
+                      </SubMenu>
+                    )
+                  } else {
+                    return <Menu.Item key={secondItem.key}>{secondItem.name}</Menu.Item>
+                  }
+                })}
+              </SubMenu>
+            )
+          } else {
+            return <Menu.Item key={firstItem.key}>{firstItem.name}</Menu.Item>
           }
-        >
-          <Menu.Item key="1">Option 1</Menu.Item>
-          <Menu.Item key="2">Option 2</Menu.Item>
-          <Menu.Item key="3">Option 3</Menu.Item>
-          <Menu.Item key="4">Option 4</Menu.Item>
-        </SubMenu>
-        <SubMenu
-          key="sub2"
-          title={
-            <span>
-              <Icon type="appstore" />
-              <span>Navigation Two</span>
-            </span>
-          }
-        >
-          <Menu.Item key="5">Option 5</Menu.Item>
-          <Menu.Item key="6">Option 6</Menu.Item>
-          <SubMenu key="sub3" title="Submenu">
-            <Menu.Item key="7">Option 7</Menu.Item>
-            <Menu.Item key="8">Option 8</Menu.Item>
-          </SubMenu>
-        </SubMenu>
-        <SubMenu
-          key="sub4"
-          title={
-            <span>
-              <Icon type="setting" />
-              <span>Navigation Three</span>
-            </span>
-          }
-        >
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
-          <Menu.Item key="11">Option 11</Menu.Item>
-          <Menu.Item key="12">Option 12</Menu.Item>
-        </SubMenu>
+        })}
       </Menu>
     )
   }

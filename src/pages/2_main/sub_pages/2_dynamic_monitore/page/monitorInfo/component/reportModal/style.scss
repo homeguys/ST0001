@@ -1,0 +1,88 @@
+.report-modal {
+  width: 15rem !important;
+  top: 1.6rem;
+  margin-left: 4.7rem;
+
+  .ant-modal-footer {
+    text-align: center;
+
+    button:first-of-type {
+      display: none;
+    }
+  }
+}
+
+/* 监测信息 */
+.monitor-info {
+  .table-info .ant-table-thead > tr > th {
+    background-color: #E7F0FB;
+  }
+}
+
+/* 上报 */
+.info-report {
+  .ant-form {
+    display: flex;
+  }
+  .ant-form-item {
+    flex-direction: column;
+    width: 1.4rem;
+    
+    .ant-form-item-label {
+      height: 0.5rem;
+      line-height: 0.5rem;
+      text-align: center;
+      background-color: #E7F0FB;
+      border: 1px solid #C6C6C6;
+    }
+    .ant-form-item-control {
+      height: 2rem;
+      line-height: 2rem;
+      border: 1px solid #C6C6C6;
+      text-align: center;
+      
+      .ant-form-item-control-input {
+        justify-content: center;
+        .ant-form-item-control-input-content {
+          padding: 0.05rem 0.05rem;
+          height: 2rem;
+          text-align: center;
+          max-width: 96%;
+
+          .ant-radio-group {
+            text-align: left;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 资料上传 */
+.upload-file {
+  .table-info .ant-table-thead > tr > th {
+    background-color: #E7F0FB;
+  }
+
+  .operate {
+    span {
+      color: #4198F0;
+      margin-left: 0.2rem;
+    }
+  }
+}
+
+/* 头部 */
+.title-name {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  color: rgba(0, 0, 0, 0.95);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  span:first-of-type {
+    margin-right: 0.2rem;
+  }
+}

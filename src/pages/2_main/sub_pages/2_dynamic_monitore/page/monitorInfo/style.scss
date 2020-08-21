@@ -1,0 +1,52 @@
+.monitor-info {
+  width: 100%;
+
+  /* 左侧搜索框 */
+  .monitor-info-search {
+    width: 4.2rem;
+
+    .info-search {
+      padding: 0.3rem 0.2rem;
+
+      .ant-cascader-picker {
+        font-size: 12px;
+        width: 1.8rem;
+
+        .ant-cascader-picker-label {
+          padding: 0 16px 0 6px;
+        }
+        .ant-input {
+          height: 24px;
+          padding: 4px 6px;
+        }
+      }
+
+      .ant-select {
+        border: 1px solid #E0E0E0;
+        height: 24px;
+        line-height: 24px;
+        margin-left: 3px;
+        width: 0.96rem;
+        font-size: 0.12rem;
+        .ant-select-selector {
+          height: 24px;
+
+          .ant-select-selection-item {
+            line-height: 24px;
+          }
+        }
+      }
+
+      .search-btn {
+        margin-top: 0.15rem;
+        padding-left: 0.1rem;
+      }
+    }
+  }
+
+  /* 右侧地图内容 */
+  .monitor-info-map {
+    width: calc(100% - 4.2rem);
+    background-color: lightgray;
+  }
+}

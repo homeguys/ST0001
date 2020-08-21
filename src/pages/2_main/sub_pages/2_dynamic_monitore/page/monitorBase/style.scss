@@ -1,0 +1,88 @@
+.page-content {
+  height: 100%;
+  display: flex;
+
+  .page-content-left {
+    width: 270px;
+    height: 100%;
+
+    .slider-title {
+      width: 256px;
+      height: 0.42rem;
+      line-height: 0.42rem;
+      margin-top: 0.2rem;
+      text-align: center;
+      background-color: #F6F6F6;
+      border-right: 1px solid #E8E8E8;
+      font-size: 0.18rem;
+      color: #333333;
+      font-weight: 600;
+    }
+  }
+
+  .page-content-right {
+    flex: 1 1;
+    padding: 0.2rem 0.3rem;
+    text-align: center;
+
+    .monitor-content {
+      padding: 0 0.2rem;
+
+      .monitor-title {
+        padding: 0 0.3rem;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        display: flex;
+        align-items: center;
+        border: 1px solid #F2F2F2;
+
+        button {
+          width: 1rem;
+        }
+
+        > span {
+          flex: 1 1;
+          font-size: 0.18rem;
+          font-weight: 600;
+        }
+      }
+
+      .monitor-report {
+        height: 1.5rem;
+        border: 1px solid #F2F2F2;
+        border-top: 0;
+        position: relative;
+
+        span {
+          position: absolute;
+          bottom: 0.1rem;
+          right: 0.4rem;
+          cursor: pointer;
+        }
+      }
+
+      .char-container {
+        margin-top: 0.2rem;
+        height: 6.5rem;
+        display: flex;
+        position: relative;
+
+        .char-content {
+          width: 50%;
+
+          .char-box {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .char-info-btn {
+    position: absolute;
+    bottom: 2%;
+    right: 50%;
+    cursor: pointer;
+  }
+}
