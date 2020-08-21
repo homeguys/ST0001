@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom'
 import Header from '../3_screen/component/header'
 import Monitor from '../3_screen/component/left/monitor'
 import Status from '../3_screen/component/left/status'
-import StatusModal from '../3_screen/component/left/status_modal'
 import Video from '../3_screen/component/left/video'
 import Standard from '../3_screen/component/right/standard'
 import Ratio from '../3_screen/component/right/ratio'
@@ -27,9 +26,9 @@ function Screen(props) {
           <Status type="horizon" />
           <Video />
         </section>
-        <section className="map block">
-          <section className="map-contain">aa</section>
-          <StatusModal />
+        <section className="map-box block">
+          <section className="map-contain">地图容器</section>
+          <section className="bottom-status">统计容器</section>
         </section>
         <section className="right">
           <Standard />

@@ -29,9 +29,13 @@ const loginSubmit = (type) => (Componnet) => {
     handleSubmit = () => {
       // 登录
       if (type === 'login') {
-        const { loginIn } = this.props
-        const { fields } = this.state
-        loginIn(fields)
+        // const { loginIn } = this.props
+        // const { fields } = this.state
+        // loginIn(fields)
+
+        // 假登录跳转
+        const { history } = this.props
+        history.push('/main')
       }
     }
 

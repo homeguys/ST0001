@@ -1,14 +1,18 @@
 import React from 'react'
-import { Table } from 'antd'
+import { Table, Select } from 'antd'
+
+const { Option } = Select
 
 const data = [
   {
+    key: 1,
     name: '双槽斗河道',
     company: '790',
     tel: 800,
     waters: '2019-07-18'
   },
   {
+    key: 2,
     name: '核查结果',
     company: '建设违规'
   }
@@ -39,11 +43,19 @@ function DynamicDetection() {
       key: 'company',
       align: 'center',
       render: (text, row, index) => {
+        console.warn(index)
         if (index < 1) {
           return text
         }
         return {
-          children: text,
+          children: (
+            <Select style={{ width: '80%' }} defaultValue="3">
+              <Option value="0">未开工</Option>
+              <Option value="1">已开工</Option>
+              <Option value="2">已完成</Option>
+              <Option value="3">违规建设</Option>
+            </Select>
+          ),
           props: {
             colSpan: 3
           }

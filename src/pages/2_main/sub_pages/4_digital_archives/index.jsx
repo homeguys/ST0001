@@ -8,8 +8,8 @@ function DigitalArchives() {
     <section id="digital-archives">
       <section className="left">aa</section>
       <section className="right">
-        {/* <Statistic /> */}
-        <ArchivalInfoShow />
+        <Statistic />
+        {/* <ArchivalInfoShow /> */}
       </section>
     </section>
   )

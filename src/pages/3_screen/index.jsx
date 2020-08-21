@@ -29,7 +29,7 @@ function Screen(props) {
           </Status>
           <Video />
         </section>
-        <section className="map block">map</section>
+        <section className="map-box map-container block">地图容器</section>
         <section className="right">
           <Standard />
           <Ratio />

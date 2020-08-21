@@ -25,36 +25,43 @@ function ArchivalInfo() {
 
   const data = [
     {
+      key: 1,
       name: '1、项目法人要求涉河涉堤（占用水域）',
       company: 'aa',
       tel: '成功'
     },
     {
+      key: 2,
       name: '1、项目法人要求涉河涉堤（占用水域）',
       company: 'aa',
       tel: '成功'
     },
     {
+      key: 3,
       name: '1、项目法人要求涉河涉堤（占用水域）',
       company: 'aa',
       tel: '成功'
     },
     {
+      key: 4,
       name: '1、项目法人要求涉河涉堤（占用水域）',
       company: 'aa',
       tel: '成功'
     },
     {
+      key: 5,
       name: '1、项目法人要求涉河涉堤（占用水域）',
       company: 'aa',
       tel: '成功'
     },
     {
+      key: 6,
       name: '1、项目法人要求涉河涉堤（占用水域）',
       company: 'aa',
       tel: '成功'
     },
     {
+      key: 7,
       name: '8、项目法人要求涉河涉堤（占用水域）',
       company: 'aa',
       tel: '成功'
