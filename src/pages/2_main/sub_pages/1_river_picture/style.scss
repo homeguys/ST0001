@@ -1,19 +1,22 @@
-#riverPicture {
-  display: flex;
+.riverPicture {
+  height: calc(100% - 0rem);
+  position: relative;
 
-  .slider-bar {
-    width: 2rem;
+  .layer-tree {
+    position: absolute;
+    left: 0;
+    width: 2.4rem;
     height: 100%;
-    overflow: hidden;
+    background-color: white;
+
+    ul {
+      height: 100%;
+    }
   }
 
-  .map-container {
-    flex: 1 1;
-  }
-
-  .info-box {
-    width: 3.25rem;
+  .mapContainer {
+    width: 100%;
     height: 100%;
-    overflow: hidden;
+    background-color: #364B34;
   }
 }

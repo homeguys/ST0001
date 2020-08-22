@@ -1,0 +1,85 @@
+.page-content {
+  height: 100%;
+  display: flex;
+
+  .page-content-left {
+    width: 270px;
+    height: 100%;
+
+    .slider-title {
+      width: 256px;
+      height: 0.42rem;
+      line-height: 0.42rem;
+      margin-top: 0.2rem;
+      text-align: center;
+      background-color: #F6F6F6;
+      border-right: 1px solid #E8E8E8;
+      font-size: 0.18rem;
+      color: #333333;
+      font-weight: 600;
+    }
+  }
+
+  .page-content-right {
+    flex: 1 1;
+    padding: 0.2rem 0.3rem;
+    text-align: center;
+
+    .account-title {
+      display: flex;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      padding: 0 0.5rem;
+      align-items: center;
+      background-color: #F6F8FA;
+
+      .account-title-left {
+        width: 60%;
+        display: flex;
+        
+        button {
+          margin-left: 0.15rem;
+        }
+      }
+
+      .account-title-right {
+        flex: 1 1;
+
+        button {
+          margin-left: 0.2rem;
+        }
+      }
+    }
+
+    .account-table {
+      margin-top: 0.3rem;
+      
+      .ant-table-thead > tr > th {
+        text-align: center;
+      }
+      .ant-table-tbody > tr > td {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.add-account-modal {
+  width: 3.6rem !important;
+  .ant-form-item-label {
+    width: 0.8rem
+  }
+
+  .ant-form-item-control {
+    width: 2rem;
+    .ant-form-item-control-input,
+    .ant-form-item-control-input-content,
+    .ant-input {
+      width: 2rem;
+    }
+
+    .ant-picker {
+      width: 2rem;
+    }
+  }
+}

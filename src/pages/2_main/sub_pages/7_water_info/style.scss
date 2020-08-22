@@ -1,0 +1,28 @@
+
+#water-info{
+  padding: 0.1rem;
+  .select-Tab {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding-left: 0.8rem;
+    background-color: #E1F1FF;
+    border: 1px solid #B8DEFF;
+    display: flex;
+    align-items: center;
+    .select-Tab-ul {
+      display: flex;
+      margin-right: 0.8rem;
+
+      li {
+        width: 0.8rem;
+        color: #373737;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    button {
+      background-color: #107EBB;
+    }
+  }
+}

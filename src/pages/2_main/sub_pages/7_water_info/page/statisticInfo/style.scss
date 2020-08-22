@@ -1,0 +1,26 @@
+.statistic-content {
+  margin: 1rem 3rem;
+  height: 7rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+
+  >div {
+    padding-top: 0.12rem;
+  }
+
+  .statistic-content-top-left,
+  .statistic-content-top-right {
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  .statistic-content-top-left,
+  .statistic-content-bottom-left {
+    border-right: 1px solid #E5E5E5;
+  }
+
+  .char-box {
+    width: 100%;
+    height: 100%;
+  }
+}

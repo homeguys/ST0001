@@ -1,0 +1,144 @@
+{
+  "status": 200,
+  "code": "0",
+  "data": {
+    "waterType": [
+      {
+        "name": "河道",
+        "value": 1235.88,
+        "category": ""
+      },
+      {
+        "name": "湖泊",
+        "value": 123.88,
+        "category": ""
+      },
+      {
+        "name": "池塘",
+        "value": 213.88,
+        "category": ""
+      },
+      {
+        "name": "其他水域",
+        "value": 233.88,
+        "category": ""
+      },
+      {
+        "name": "山塘",
+        "value": 83.88,
+        "category": ""
+      },
+      {
+        "name": "水库",
+        "value": 183.88,
+        "category": ""
+      }
+    ],
+    "region": [
+      {
+        "name": "武康街道",
+        "value": 183.88,
+        "category": ""
+      },
+      {
+        "name": "舞阳街道",
+        "value": 163.88,
+        "category": ""
+      },
+      {
+        "name": "阜溪街道",
+        "value": 123.88,
+        "category": ""
+      },
+      {
+        "name": "阜溪下渚湖街道街道",
+        "value": 83.88,
+        "category": ""
+      },
+      {
+        "name": "乾元镇",
+        "value": 63.88,
+        "category": ""
+      },
+      {
+        "name": "新市镇",
+        "value": 175.88,
+        "category": ""
+      },
+      {
+        "name": "洛舍镇",
+        "value": 195.88,
+        "category": ""
+      },
+      {
+        "name": "钟管镇",
+        "value": 295.88,
+        "category": ""
+      },
+      {
+        "name": "雷甸镇",
+        "value": 395.88,
+        "category": ""
+      },
+      {
+        "name": "禹越镇",
+        "value": 365.88,
+        "category": ""
+      },
+      {
+        "name": "新安镇",
+        "value": 385.88,
+        "category": ""
+      },
+      {
+        "name": "莫干山镇",
+        "value": 585.88,
+        "category": ""
+      }
+    ],
+    "riverLevel": [
+      {
+        "name": "省级",
+        "value": 2585.88,
+        "category": ""        
+      },
+      {
+        "name": "市级",
+        "value": 1885.88,
+        "category": ""
+      },
+      {
+        "name": "县级",
+        "value": 1585.88,
+        "category": ""
+      },
+      {
+        "name": "乡级",
+        "value": 785.88,
+        "category": ""
+      }
+    ],
+    "lakeLevel": [
+      {
+        "name": "省级",
+        "value": 3585.88,
+        "category": ""
+      },
+      {
+        "name": "市级",
+        "value": 2885.88,
+        "category": ""
+      },
+      {
+        "name": "县级",
+        "value": 2585.88,
+        "category": ""
+      },
+      {
+        "name": "乡级",
+        "value": 1825.88,
+        "category": ""
+      }
+    ]
+  }
+}

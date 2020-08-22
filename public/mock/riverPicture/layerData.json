@@ -1,0 +1,99 @@
+{
+  "status": 200,
+  "code": "0",
+  "data": [
+    {
+      "title": "水域现状",
+      "key": "currentWaters",
+      "layerUrl": "",
+      "layerType": "",
+      "disabled": true,
+      "children": [
+        {
+          "title": "河道",
+          "key": "riverCourse",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "湖泊",
+          "key": "lake",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "水库",
+          "key": "reservoir",
+          "layerUrl": "",
+          "layerType": ""
+        },      
+        {
+          "title": "山塘",
+          "key": "shantang",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "其他水域",
+          "key": "otherWater",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "蓄滞洪区",
+          "key": "detention",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "人工水道",
+          "key": "artificialWaterway",
+          "layerUrl": "",
+          "layerType": ""
+        }
+      ]
+    },
+    {
+      "title": "水域断面",
+      "key": "waterSection",
+      "layerUrl": "",
+      "layerType": "",
+      "disabled": true
+    },
+    {
+      "title": "巡查轨迹图层",
+      "key": "patrolTrack",
+      "layerUrl": "",
+      "layerType": "",
+      "disabled": true
+    },
+    {
+      "title": "水利工程",
+      "key": "waterConservancy",
+      "layerUrl": "",
+      "layerType": "",
+      "disabled": true
+    },
+    {
+      "title": "视频监控",
+      "key": "videoSurveillance",
+      "layerUrl": "",
+      "layerType": "",
+      "disabled": true
+    },
+    {
+      "title": "水域变化",
+      "key": "waterChange",
+      "layerUrl": "",
+      "layerType": "",
+      "disabled": true
+    },
+    {
+      "title": "水利规划",
+      "key": "waterPlan",
+      "layerUrl": "",
+      "layerType": "",
+      "disabled": true
+    }
+  ]
+}

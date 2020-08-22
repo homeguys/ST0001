@@ -1,0 +1,31 @@
+.time-slider {
+  width: calc(100% - 2.4rem - 3.8rem);
+  height: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 2.4rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  >span {
+    display: inline-block;
+    width: 0.5rem;
+    font-size: 0.25rem;
+    color: #FEBF00;
+    cursor: pointer;
+  }
+
+  .ant-slider {
+    flex: 1 1;
+
+    .ant-slider-track {
+      background-color: #FEBF00;
+    }
+
+    .ant-slider-handle.ant-tooltip-open {
+      border-color:#FEBF00
+    }
+  }
+}

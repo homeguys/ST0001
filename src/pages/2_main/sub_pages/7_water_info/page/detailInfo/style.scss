@@ -1,0 +1,87 @@
+.detail-content {
+  height: 9rem;
+  padding: 0.2rem 0.6rem;
+  .detail-title {
+    height: 0.6rem;
+    display: flex;
+    align-items: center;
+
+    .detail-title-query {
+      width: 50%;
+      display: flex;
+      >span {
+        display: inline-block;
+        text-align: center;
+        width: 1rem;
+        vertical-align: middle;
+        line-height: 0.3rem;
+      }
+
+      input {
+        width: 1.8rem;
+      }
+
+      button {
+        margin-left: 0.2rem;
+        width: 0.8rem;
+      }
+    }
+
+    .detail-title-operate {
+      flex: 1 1;
+      text-align: right;
+
+      button:first-of-type {
+        margin-right: 1rem;
+      }
+
+      button:last-of-type {
+        margin-right: 0.3rem;
+        margin-left: 0.2rem;
+      }
+    }
+  }
+
+  .table-content {
+    .ant-table {
+      .hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+.water-detail-modal {
+  width: 2.5rem!important;
+
+  .modal-content {
+    border-top: 1px solid lightgrey;
+    li:first-of-type {
+      span:last-of-type {
+        font-size: 0.14rem;
+      }
+    }
+    li {
+      height: 0.3rem;
+      line-height: 0.3rem;
+      border-bottom: 1px solid lightgrey;
+      span {
+        display: inline-block;
+      }
+      span:first-of-type {
+        width: 1rem;
+        text-align: center;
+        border-left: 1px solid lightgrey;
+        border-right: 1px solid lightgrey;
+      }
+
+      span:last-of-type {
+        width: 1rem;
+        font-size: 0.2rem;
+        text-align: center;
+        border-right: 1px solid lightgrey;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -340,6 +340,40 @@ export function getParents(el, parent = '') {
 }
 
 /**
+  * 获取最上层元素
+  * @param el // 当前对象
+  * @param parentSelector // 父级对象
+  * @return {*}
+  */
+export function getTopElement(el, parentSelector /* optional */) {
+  if (parentSelector === undefined) {
+    parentSelector = ''
+  }
+
+  let p = el.parentNode
+  while (p.className.indexOf(parentSelector) === -1) {
+    p = p.parentNode
+    if (p.tagName === 'HTML') return
+  }
+  return p
+}
+
+/**
+ * 获取元素的子节点
+ * @param { Object } dom
+ */
+export function getChildNode(dom) {
+  const nodes = []
+  const childrens = dom.childNodes
+  for (let i = 0; i < childrens.length; i++) {
+    if (childrens[i].nodeType === 1) {
+      nodes.push(childrens[i])
+    }
+  }
+  return nodes
+}
+
+/**
  * 数组对象提取某个键值的数据至新数组
  * @param {*} arr 数组对象
  * @param {*} key 判断的键

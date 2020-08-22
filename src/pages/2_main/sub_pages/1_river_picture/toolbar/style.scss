@@ -1,0 +1,42 @@
+.toolbar {
+  position: absolute;
+  right: 4rem;
+  top: 0.12rem;
+
+  &-list {
+    display: flex;
+    height: 0.26rem;
+    line-height: 0.26rem;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    &-item {
+      width: 0.76rem;
+      padding: 0 0.02rem;
+      text-align: center;
+      cursor: pointer;
+
+      >span {
+
+        .iconfont {
+          color: #61B27F;
+          font-size: 0.17rem;
+          margin-right: 0.05rem;
+        }
+      }
+    }
+
+    &-item-active {
+      font-weight: 600;
+      border-right: 1px solid #CECFCD;
+
+      >span {
+
+        .iconfont {
+          color: #637FF4;
+          font-size: 0.17rem;
+          margin-right: 0.05rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.layer-tree {
+  padding: 0.15rem 0.1rem;
+
+  .ant-tree {
+    .ant-tree-list-holder-inner {
+      >.ant-tree-treenode {
+        margin-bottom: 0.06rem;
+      }
+    }
+
+    .ant-tree-checkbox-disabled {
+      display: none;
+    }
+
+    .ant-tree-treenode-disabled .ant-tree-node-content-wrapper {
+      color: black;
+    }
+  }
+}
