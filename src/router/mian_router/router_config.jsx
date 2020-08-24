@@ -44,12 +44,12 @@ export default [
     icon: 'icon_nav5.png',
     component: <AccountManage />
   },
-  {
-    name: '预警信息',
-    path: 'warnInfo',
-    icon: 'icon_nav6.png',
-    component: <WarnInfo />
-  },
+  // {
+  //   name: '预警信息',
+  //   path: 'warnInfo',
+  //   icon: 'icon_nav6.png',
+  //   component: <WarnInfo />
+  // },
   {
     name: '水域信息',
     path: 'waterInfo',

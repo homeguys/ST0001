@@ -180,27 +180,31 @@ export default function LayerItemInfo() {
           <span>(单位:km²)</span>
         </p>
         <div className="layer-info-content-select">
-          <Select
-            value={selectedBaseYear}
-            onChange={baseYearChange}
-          >
-            {
-              baseYears.map((year) => (
-                <Option key={year}>{year}</Option>
-              ))
-            }
-          </Select>
-          <span className="layer-info-content-select-label">较</span>
-          <Select
-            value={selectedCompareYear}
-            onChange={compareYearChange}
-          >
-            {
-              baseYears.map((year) => (
-                <Option key={year}>{year}</Option>
-              ))
-            }
-          </Select>
+          <div class="layer-info-content-select-left">
+            <Select
+              value={selectedBaseYear}
+              onChange={baseYearChange}
+            >
+              {
+                baseYears.map((year) => (
+                  <Option key={year}>{year}</Option>
+                ))
+              }
+            </Select>
+          </div>
+          <div class="layer-info-content-select-right">
+            <span className="layer-info-content-select-label">较</span>
+            <Select
+              value={selectedCompareYear}
+              onChange={compareYearChange}
+            >
+              {
+                baseYears.map((year) => (
+                  <Option key={year}>{year}</Option>
+                ))
+              }
+            </Select>
+          </div>
         </div>
         <InfoList />
       </section>

@@ -3,7 +3,7 @@
  * @Author: 郑杰
  * @Date: 2020-08-11 16:56:53
  * @LastEditors: 郑杰14
- * @LastEditTime: 2020-08-19 17:19:58
+ * @LastEditTime: 2020-08-24 08:50:34
  * @Description: 饼状图option
  */
 import React from 'react'
@@ -31,7 +31,7 @@ const param = {
     legend: {
       show: true,
       orient: 'horizontal',
-      bottom: 20,
+      bottom: 5,
       textStyle: {
         color: 'black'
       },
@@ -68,7 +68,7 @@ const param = {
             position: 'outside',
             formatter: '{b}：{c} km²',
             color: '#1D302E',
-            fontSize: 16
+            fontSize: 13
           }
         }
       }

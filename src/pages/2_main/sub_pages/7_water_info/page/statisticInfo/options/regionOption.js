@@ -3,7 +3,7 @@
  * @Author: 郑杰
  * @Date: 2020-08-11 16:56:53
  * @LastEditors: 郑杰14
- * @LastEditTime: 2020-08-19 17:25:07
+ * @LastEditTime: 2020-08-24 08:56:46
  * @Description: 饼状图option
  */
 import React from 'react'
@@ -31,9 +31,13 @@ const param = {
     legend: {
       show: true,
       orient: 'horizontal',
-      bottom: 20,
+      bottom: 5,
+      itemWidth: 18,
+      itemHeight: 9,
+      itemGap: 5,
       textStyle: {
-        color: 'black'
+        color: 'black',
+        fontSize: 12
       },
       formatter: (text) => {
         text = text.replace(/\S{8}/g, function (match) {

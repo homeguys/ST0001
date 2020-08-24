@@ -16,6 +16,16 @@
 .monitor-info {
   .table-info .ant-table-thead > tr > th {
     background-color: #E7F0FB;
+    font-size: 0.14rem;
+  }
+
+  .table-info .ant-table-tbody > tr > td {
+    font-size: 0.14rem;
+
+    .ant-btn {
+      width: 0.7rem;
+      font-size: 0.14rem;
+    }
   }
 }
 
