@@ -5,20 +5,19 @@
 
   &-list {
     display: flex;
-    height: 0.26rem;
-    line-height: 0.26rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
     background-color: rgba(255, 255, 255, 0.6);
 
     &-item {
-      width: 0.76rem;
+      width: 0.82rem;
       padding: 0 0.02rem;
       text-align: center;
       cursor: pointer;
 
-      >span {
-
+      > span {
         .iconfont {
-          color: #61B27F;
+          color: #61b27f;
           font-size: 0.17rem;
           margin-right: 0.05rem;
         }
@@ -27,12 +26,11 @@
 
     &-item-active {
       font-weight: 600;
-      border-right: 1px solid #CECFCD;
+      border-right: 1px solid #cecfcd;
 
-      >span {
-
+      > span {
         .iconfont {
-          color: #637FF4;
+          color: #637ff4;
           font-size: 0.17rem;
           margin-right: 0.05rem;
         }

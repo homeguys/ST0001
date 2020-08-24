@@ -27,8 +27,14 @@ function SearchBox(props) {
         </Form.Item>
         <Form.Item label="年份" name="year">
           <Select placeholder="请选择下拉">
-            <Option key={123} value={123}>
-              {123}
+            <Option key={1} value={2018}>
+              {2018}
+            </Option>
+            <Option key={2} value={2019}>
+              {2019}
+            </Option>
+            <Option key={3} value={2020}>
+              {2020}
             </Option>
           </Select>
         </Form.Item>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Timer from './timer'
 
 function Header(props) {
   function jumpLogin() {
@@ -8,7 +9,7 @@ function Header(props) {
 
   return (
     <header>
-      <section className="date">2020年 04月 17日 15:37：22</section>
+      <Timer />
       <span className="title">秀洲区域动态监管一张图</span>
       <button type="button" className="login-btn" onClick={jumpLogin}>
         登录

@@ -20,7 +20,7 @@ function ChartsBar() {
       legend: {
         orient: 'horizontal',
         top: 15,
-        left: 10,
+        right: 10,
         data: ['审批占图', '审批补偿']
       },
       grid: {
@@ -32,7 +32,7 @@ function ChartsBar() {
       xAxis: [
         {
           type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          data: ['2014', '2015', '2016', '2017', '2018', '2019', '2020'],
           axisLabel: {
             textStyle: {
               color: '#b4b4b4'

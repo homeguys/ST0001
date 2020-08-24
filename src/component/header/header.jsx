@@ -5,6 +5,7 @@ import $ from 'zepto-webpack'
 import { connect } from 'react-redux'
 import recompact from 'recompact'
 import { withRouter } from 'react-router-dom'
+import Timer from '../../pages/3_screen/component/timer'
 import { title } from '../../config/varibles'
 import { Links } from '../../router/mian_router'
 import { setActive } from '../../utils/utils'
@@ -67,7 +68,7 @@ class Header extends React.Component {
         <section className="sys-name">{title}</section>
         <Links />
         <section className="sys-info">
-          <section className="date">2020-05-26 15:00</section>
+          <Timer />
           <section className="user-name" onClick={this.handleAdd} onMouseLeave={this.handleRemove}>
             <i className="iconfont">&#xe60e;</i>
             <span>admin</span>

@@ -10,7 +10,6 @@ const DynamicMonitore = lazy(() => import(/* webpackChunkName: 'DynamicMonitore'
 const Supervision = lazy(() => import(/* webpackChunkName: 'Supervision' */ '../../pages/2_main/sub_pages/3_supervision'))
 const DigitalArchives = lazy(() => import(/* webpackChunkName: 'DigitalArchives' */ '../../pages/2_main/sub_pages/4_digital_archives'))
 const AccountManage = lazy(() => import(/* webpackChunkName: 'AccountManage' */ '../../pages/2_main/sub_pages/5_account_manage'))
-const WarnInfo = lazy(() => import(/* webpackChunkName: 'WarnInfo' */ '../../pages/2_main/sub_pages/6_warn_info'))
 const WaterInfo = lazy(() => import(/* webpackChunkName: 'WaterInfo' */ '../../pages/2_main/sub_pages/7_water_info'))
 
 export default [

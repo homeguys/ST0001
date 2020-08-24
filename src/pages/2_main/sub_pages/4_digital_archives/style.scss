@@ -9,6 +9,32 @@
     width: 3.5rem;
     background: #fff;
     margin-right: 0.3rem;
+    padding: 0.15rem;
+
+    .project-tree {
+      position: relative;
+      height: 100%;
+      padding-bottom: 0.4rem;
+      overflow: auto;
+
+      .ant-tree-title {
+        font-size: 0.17rem;
+        line-height: 0.42rem;
+      }
+
+      .back-statistic {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        font-size: 0.2rem;
+        background: #67a8e6;
+        color: #fff;
+        line-height: 0.4rem;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
   }
 
   .right {

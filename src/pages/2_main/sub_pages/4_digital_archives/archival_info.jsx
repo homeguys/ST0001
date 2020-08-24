@@ -4,13 +4,14 @@ import PatchInput from '../3_supervision/modal_edit/patch_input'
 import SummaryApproval from '../3_supervision/modal_edit/summary_approval'
 import ArchivalInfo from '../3_supervision/modal_edit/archival_info'
 
-function ArchivalInfoShow() {
+function ArchivalInfoShow(props) {
+  const { type } = props
   return (
     <section className="archival-info-show">
-      <BasicInfo />
-      <PatchInput />
-      <SummaryApproval />
-      <ArchivalInfo />
+      <BasicInfo type={type} />
+      <PatchInput type={type} />
+      <SummaryApproval type={type} />
+      <ArchivalInfo type={type} />
     </section>
   )
 }

@@ -17,12 +17,14 @@ export default function AccountTitle() {
       <section className="account-title-left">
         <Form form={form} layout="inline">
           <Form.Item
+            className="account-title-left-name"
             label="名称"
             name="name"
           >
             <Input />
           </Form.Item>
           <Form.Item
+            className="account-title-left-time"
             label="创建日期"
             name="date"
           >
