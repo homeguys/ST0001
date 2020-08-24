@@ -45,15 +45,9 @@ export default [
     component: <AccountManage />
   },
   {
-    name: '预警信息',
-    path: 'warnInfo',
-    icon: 'icon_nav6.png',
-    component: <WarnInfo />
-  },
-  {
     name: '水域信息',
     path: 'waterInfo',
-    icon: 'icon_nav6.png',
+    icon: 'icon_nav7.png',
     component: <WaterInfo />
   }
 ]
