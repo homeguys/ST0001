@@ -32,7 +32,7 @@ function ChartsBar() {
       xAxis: [
         {
           type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          data: ['2014', '2015', '2016', '2017', '2018', '2019', '2020'],
           axisLabel: {
             textStyle: {
               color: '#b4b4b4'

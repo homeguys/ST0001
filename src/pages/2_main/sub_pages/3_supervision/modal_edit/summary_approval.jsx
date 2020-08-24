@@ -1,17 +1,22 @@
 import React from 'react'
 
-function SummaryApproval() {
+function SummaryApproval(props) {
+  const { type } = props
   return (
     <section className="summary-approval">
       <section className="modal-edit-title">
         批文摘要
         <i />
-        <button type="button" className="iconfont">
-          &#xe612;
-        </button>
-        <button type="button" className="iconfont">
-          &#xe645;
-        </button>
+        {type !== 'archives' ? (
+          <>
+            <button type="button" className="iconfont">
+              &#xe612;
+            </button>
+            <button type="button" className="iconfont">
+              &#xe645;
+            </button>
+          </>
+        ) : null}
       </section>
       <section className="content">
         <ul>

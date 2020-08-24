@@ -1,4 +1,5 @@
 import React from 'react'
+import WarnInfo from './warnInfo'
 import LayerTree from './layerTree' // 图层控制树
 import LayerInfo from './layerInfo' // 图层信息
 import Toolbar from './toolbar' // 地图容器
@@ -10,6 +11,7 @@ import './style.scss'
 export default function index() {
   return (
     <div className="riverPicture" id="riverPicture">
+      <WarnInfo />
       <LayerTree />
       <LayerInfo />
       <div className="mapContainer">

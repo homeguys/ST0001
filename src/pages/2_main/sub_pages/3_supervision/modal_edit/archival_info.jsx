@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table } from 'antd'
 
-function ArchivalInfo() {
+function ArchivalInfo(props) {
   const columns = [
     {
       title: '附件类别',
@@ -68,14 +68,18 @@ function ArchivalInfo() {
     }
   ]
 
+  const { type } = props
+
   return (
     <section className="archival-info">
       <section className="modal-edit-title">
         档案信息
         <i />
-        <button type="button" className="iconfont">
-          &#xe68a;
-        </button>
+        {type !== 'archives' ? (
+          <button type="button" className="iconfont">
+            &#xe68a;
+          </button>
+        ) : null}
       </section>
       <section className="content">
         <Table

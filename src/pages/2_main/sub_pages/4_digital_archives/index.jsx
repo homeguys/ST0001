@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import Sliderbar from '../../../../component/sliderbar'
+import ProjectTree from './project_tree'
 import Statistic from './statistic'
 import ArchivalInfoShow from './archival_info'
 import { getArchivesMenuData } from '../../../../store/main/digital_archives.redux'
 import './style.scss'
 
 function DigitalArchives() {
-  const menuData = useSelector((state) => state.archives.menuData)
+  const archives = useSelector((state) => state.archives)
+  const { isStatistic } = archives
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -18,11 +19,10 @@ function DigitalArchives() {
   return (
     <section id="digital-archives">
       <section className="left">
-        <Sliderbar dataSource={menuData} />
+        <ProjectTree />
       </section>
       <section className="right">
-        <Statistic />
-        {/* <ArchivalInfoShow /> */}
+        {isStatistic ? <Statistic /> : <ArchivalInfoShow type="archives" />}
       </section>
     </section>
   )

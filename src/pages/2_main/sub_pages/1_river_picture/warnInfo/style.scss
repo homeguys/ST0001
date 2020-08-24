@@ -1,0 +1,67 @@
+.warnInfo {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 2.6rem;
+  width: 3.6rem;
+  background: #fff;
+  padding-bottom: 0;
+
+  h5 {
+    font-size: 0.2rem;
+    font-weight: 500;
+    padding: 0 0.12rem;
+    line-height: 0.6rem;
+
+    span {
+      float: right;
+      color: #999999;
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.25rem;
+
+    li {
+      line-height: 0.55rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+
+      .iconfont {
+        color: red;
+        font-size: 0.2rem;
+      }
+
+      p.content {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+
+        span {
+          line-height: 0.2rem;
+
+          &.bottom {
+            color: #ccc;
+          }
+        }
+      }
+
+      .time-stamp {
+        color: #908b8b;
+      }
+    }
+  }
+
+  button.view-all {
+    color: #ccc;
+    line-height: 0.55rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.18rem;
+  }
+}
