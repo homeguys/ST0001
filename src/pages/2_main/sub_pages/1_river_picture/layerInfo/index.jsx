@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Tabs, Radio } from 'antd'
 import { changeSelectedPanes } from '../../../../../store/riverPic.redux'
 import BaseInfo from './baseInfo'
+import LayerItemInfo from './layerItemInfo'
 import './style.scss'
 
 const { TabPane } = Tabs
@@ -12,7 +13,8 @@ const { TabPane } = Tabs
 export default function LayerTree() {
   const riverPic = useSelector((state) => state.riverPic)
   const { panes } = riverPic
-  panes[0].content = <BaseInfo />
+  // panes[0].content = <BaseInfo />
+  panes[0].content = <LayerItemInfo />
   const dispatch = useDispatch()
 
   const [activeKey, setActiveKey] = useState(panes[0].key)

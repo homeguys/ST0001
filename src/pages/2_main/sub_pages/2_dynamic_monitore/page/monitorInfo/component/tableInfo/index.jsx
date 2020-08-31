@@ -7,7 +7,7 @@ import TableDisplay from '../../../../../../../../component/tableDisplay'
 import { changeReportVisible } from '../../../../../../../../store/monitor.redux'
 import './style.scss'
 /* 表格内容 */
-export default function TableInfo() {
+export default function TableInfo () {
   const dispatch = useDispatch()
   const defaultPagination = {
     current: 1,
@@ -50,7 +50,7 @@ export default function TableInfo() {
       dataIndex: 'operate',
       key: 'operate',
       render: (text, record) => {
-        return record.status === '未处理' ? <Button onClick={ reportClick } icon={<PlusOutlined />} type="primary">上报</Button> : null
+        return record.status === '未处理' ? <Button onClick={reportClick} icon={<PlusOutlined />} type="primary">填报</Button> : null
       }
     }
   ]

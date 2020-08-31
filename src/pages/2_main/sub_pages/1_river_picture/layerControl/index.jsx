@@ -39,17 +39,17 @@ export default function LayerControl() {
           <Checkbox
             onChange={(v) => { handleChange(v, 'state2') }}
           >
-            已完成
+            已开工
           </Checkbox>
           <Checkbox
             onChange={(v) => { handleChange(v, 'state3') }}
           >
-            在施工
+            已完成
           </Checkbox>
           <Checkbox
             onChange={(v) => { handleChange(v, 'state4') }}
           >
-            违规
+            异常
           </Checkbox>
         </div>
       </div>

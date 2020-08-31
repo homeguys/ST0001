@@ -3,7 +3,7 @@
   "code": "0",
   "data": [
     {
-      "title": "水域现状",
+      "title": "水域现状图层",
       "key": "currentWaters",
       "layerUrl": "",
       "layerType": "",
@@ -16,20 +16,20 @@
           "layerType": ""
         },
         {
-          "title": "湖泊",
-          "key": "lake",
-          "layerUrl": "",
-          "layerType": ""
-        },
-        {
           "title": "水库",
           "key": "reservoir",
           "layerUrl": "",
           "layerType": ""
-        },      
+        },
         {
           "title": "山塘",
           "key": "shantang",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "湖泊",
+          "key": "lake",
           "layerUrl": "",
           "layerType": ""
         },
@@ -54,46 +54,37 @@
       ]
     },
     {
-      "title": "水域断面",
-      "key": "waterSection",
+      "title": "重要水域图层",
+      "key": "importantWater",
       "layerUrl": "",
       "layerType": "",
-      "disabled": true
-    },
-    {
-      "title": "巡查轨迹图层",
-      "key": "patrolTrack",
-      "layerUrl": "",
-      "layerType": "",
-      "disabled": true
-    },
-    {
-      "title": "水利工程",
-      "key": "waterConservancy",
-      "layerUrl": "",
-      "layerType": "",
-      "disabled": true
-    },
-    {
-      "title": "视频监控",
-      "key": "videoSurveillance",
-      "layerUrl": "",
-      "layerType": "",
-      "disabled": true
-    },
-    {
-      "title": "水域变化",
-      "key": "waterChange",
-      "layerUrl": "",
-      "layerType": "",
-      "disabled": true
-    },
-    {
-      "title": "水利规划",
-      "key": "waterPlan",
-      "layerUrl": "",
-      "layerType": "",
-      "disabled": true
+      "disabled": true,
+      "children": [
+        {
+          "title": "重要河道",
+          "key": "importantRiverCourse",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "重要湖泊",
+          "key": "importantLake",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "重要水库",
+          "key": "importantReservoir",
+          "layerUrl": "",
+          "layerType": ""
+        },
+        {
+          "title": "重要山塘",
+          "key": "importantShantang",
+          "layerUrl": "",
+          "layerType": ""
+        }
+      ]
     }
   ]
 }
