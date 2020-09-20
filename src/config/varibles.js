@@ -1,5 +1,4 @@
-export const interfaceDir = '/htht-ShanXi'
-export const pageSize = 6
+export const interfaceDir = '/'
 
 /* 生产环境配置 */
 // export const serverIp = 'http://10.208.8.35:8888'
