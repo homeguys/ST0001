@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import recompact from 'recompact'
 import { withRouter } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import Header from './component/header'
 import Monitor from './component/left/monitor'
 import Status from './component/left/status'
@@ -10,13 +11,20 @@ import Standard from './component/right/standard'
 import Ratio from './component/right/ratio'
 import Analyse from './component/right/analyse'
 import Statistics from './component/right/statistics'
+import { getBaseInforStatistics } from '../../store/screen.redux'
 import './style.scss'
 
 const enhance = recompact.compose(withRouter)
 
 function Screen(props) {
+  const dispatch = useDispatch()
   const { history } = props
   const { push } = history
+
+  // 初始化加载请求页面数据
+  useEffect(() => {
+    dispatch(getBaseInforStatistics())
+  }, [])
 
   return (
     <section id="screen">

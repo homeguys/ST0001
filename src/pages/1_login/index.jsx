@@ -44,6 +44,7 @@ class Login extends React.Component {
 
   render() {
     const { getField, errorMsg } = this.props
+    console.warn(this.props)
     return (
       <section id="login" className="wrapper">
         <article className="content">
