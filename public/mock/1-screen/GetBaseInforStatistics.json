@@ -1,18 +1,18 @@
 {
-    "data": {
-        "CountVideoMonitor": 0,
-        "CountRSMonitor": 0,
-        "CountUAVMonitor": 0,
-        "CountPrinceRiver": 0,
-        "CountMunicipalRiver": 0,
-        "CountCountryRiver": 0,
-        "CountPool": 0,
-        "CountReservoir": 0,
-        "CountLake": 0,
-        "CountWaterLock": 0,
-        "CountPumpStation": 0,
-        "CountOther": 0
-    },
-    "code": 0,
-    "msg": ""
+  "data": {
+    "CountVideoMonitor": 0,
+    "CountRSMonitor": 0,
+    "CountUAVMonitor": 0,
+    "CountPrinceRiver": 0,
+    "CountMunicipalRiver": 0,
+    "CountCountryRiver": 0,
+    "CountPool": 0,
+    "CountReservoir": 0,
+    "CountLake": 0,
+    "CountWaterLock": 30,
+    "CountPumpStation": 20,
+    "CountOther": 10
+  },
+  "code": 0,
+  "msg": ""
 }

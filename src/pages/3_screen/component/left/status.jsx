@@ -2,7 +2,18 @@ import React from 'react'
 import { Progress } from 'antd'
 
 function Status(props) {
-  const { type, children } = props
+  const { type, children, basicData } = props
+  const {
+    CountPrinceRiver = '',
+    CountMunicipalRiver = '',
+    CountCountryRiver = '',
+    CountPool = '',
+    CountReservoir = '',
+    CountLake = '',
+    CountWaterLock = '',
+    CountPumpStation = '',
+    CountOther = ''
+  } = basicData
 
   const showStatusModal = (e) => {
     e.target.classList.toggle('active')
@@ -24,7 +35,7 @@ function Status(props) {
               <span className="text">省级河道</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
-                <span>67</span>
+                <span>{CountPrinceRiver}</span>
                 <span>个</span>
               </span>
             </li>
@@ -32,7 +43,7 @@ function Status(props) {
               <span className="text">市级河道</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
-                <span>67</span>
+                <span>{CountMunicipalRiver}</span>
                 <span>个</span>
               </span>
             </li>
@@ -40,7 +51,7 @@ function Status(props) {
               <span className="text">乡级河道</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
-                <span>67</span>
+                <span>{CountCountryRiver}</span>
                 <span>个</span>
               </span>
             </li>
@@ -48,7 +59,7 @@ function Status(props) {
               <span className="text">山塘</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
-                <span>67</span>
+                <span>{CountPool}</span>
                 <span>个</span>
               </span>
             </li>
@@ -56,7 +67,7 @@ function Status(props) {
               <span className="text">水库</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
-                <span>67</span>
+                <span>{CountReservoir}</span>
                 <span>个</span>
               </span>
             </li>
@@ -64,7 +75,7 @@ function Status(props) {
               <span className="text">湖泊</span>
               <Progress percent={30} size="small" showInfo={false} />
               <span className="num">
-                <span>67</span>
+                <span>{CountLake}</span>
                 <span>个</span>
               </span>
             </li>
@@ -76,21 +87,21 @@ function Status(props) {
             <li>
               <span className="text">水闸</span>
               <span className="num">
-                <i>67</i>
+                <i>{CountWaterLock}</i>
                 <span>个</span>
               </span>
             </li>
             <li>
               <span className="text">泵站</span>
               <span className="num">
-                <i>35</i>
+                <i>{CountPumpStation}</i>
                 <span>个</span>
               </span>
             </li>
             <li>
               <span className="text">取水口</span>
               <span className="num">
-                <i>25</i>
+                <i>{CountOther}</i>
                 <span>处</span>
               </span>
             </li>

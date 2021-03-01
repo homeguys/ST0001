@@ -2,6 +2,8 @@
 /* eslint-disable consistent-return */
 /* eslint-disable no-prototype-builtins */
 /* eslint-disable no-restricted-syntax */
+import { message } from 'antd'
+
 /**
  * 深度合并两个对象
  * @param {*} FirstOBJ 对象1
@@ -83,7 +85,7 @@ export function getGeoTime(cycle, issue) {
  * @param {*} str 提示文字
  * @param {*} type 提示类型
  */
-export function toast(message, str, type) {
+export function toast(str, type) {
   if (str !== '') {
     message.destroy()
     message.config({

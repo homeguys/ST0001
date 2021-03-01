@@ -1,17 +1,17 @@
 {
-    "data": {
-        "OV_Date": "2020-11-02 16:50:27",
-        "OV_WaterRegionPlanRatio": 0,
-        "OV_WaterRegionPlanArea": 0,
-        "OV_WaterRegionActualRatio": 0,
-        "OV_WaterRegionActualArea": 0,
-        "OV_WaterOccupy": 0,
-        "OV_WaterCompensate": 0,
-        "OV_WaterDisorderly": 0,
-        "OV_WaterBuilt": 0,
-        "OV_WaterMisappropriation": 0,
-        "OV_WaterDisorderlyMining": 0
-    },
-    "code": 0,
-    "msg": ""
+  "data": {
+    "OV_Date": "2020-11-02 16:50:27",
+    "OV_WaterRegionPlanRatio": 10,
+    "OV_WaterRegionPlanArea": 20,
+    "OV_WaterRegionActualRatio": 30,
+    "OV_WaterRegionActualArea": 40,
+    "OV_WaterOccupy": 10,
+    "OV_WaterCompensate": 20,
+    "OV_WaterDisorderly": 100,
+    "OV_WaterBuilt": 10,
+    "OV_WaterMisappropriation": 30,
+    "OV_WaterDisorderlyMining": 20
+  },
+  "code": 0,
+  "msg": ""
 }
