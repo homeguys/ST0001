@@ -33,7 +33,7 @@ function Status(props) {
           <ul>
             <li>
               <span className="text">省级河道</span>
-              <Progress percent={30} size="small" showInfo={false} />
+              <Progress percent={CountPrinceRiver} size="small" showInfo={false} />
               <span className="num">
                 <span>{CountPrinceRiver}</span>
                 <span>个</span>
@@ -41,7 +41,7 @@ function Status(props) {
             </li>
             <li>
               <span className="text">市级河道</span>
-              <Progress percent={30} size="small" showInfo={false} />
+              <Progress percent={CountMunicipalRiver} size="small" showInfo={false} />
               <span className="num">
                 <span>{CountMunicipalRiver}</span>
                 <span>个</span>
@@ -49,7 +49,7 @@ function Status(props) {
             </li>
             <li>
               <span className="text">乡级河道</span>
-              <Progress percent={30} size="small" showInfo={false} />
+              <Progress percent={CountCountryRiver} size="small" showInfo={false} />
               <span className="num">
                 <span>{CountCountryRiver}</span>
                 <span>个</span>
@@ -57,7 +57,7 @@ function Status(props) {
             </li>
             <li>
               <span className="text">山塘</span>
-              <Progress percent={30} size="small" showInfo={false} />
+              <Progress percent={CountPool} size="small" showInfo={false} />
               <span className="num">
                 <span>{CountPool}</span>
                 <span>个</span>
@@ -65,7 +65,7 @@ function Status(props) {
             </li>
             <li>
               <span className="text">水库</span>
-              <Progress percent={30} size="small" showInfo={false} />
+              <Progress percent={CountReservoir} size="small" showInfo={false} />
               <span className="num">
                 <span>{CountReservoir}</span>
                 <span>个</span>
@@ -73,7 +73,7 @@ function Status(props) {
             </li>
             <li>
               <span className="text">湖泊</span>
-              <Progress percent={30} size="small" showInfo={false} />
+              <Progress percent={CountLake} size="small" showInfo={false} />
               <span className="num">
                 <span>{CountLake}</span>
                 <span>个</span>

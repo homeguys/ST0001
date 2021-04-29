@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { Input, Button, Form, DatePicker } from 'antd'
-import { changeAddModalVisible } from '../../../../../store/account.redux'
+import { changeAddModalVisible, addAccountInfo } from '../../../../../store/account.redux'
 
 const { RangePicker } = DatePicker
 /* 台账头部 */
@@ -12,22 +12,19 @@ export default function AccountTitle() {
   const addClick = () => {
     dispatch(changeAddModalVisible(true))
   }
+
+  // 批量删除
+  const batchDel = () => {
+    dispatch(addAccountInfo(true))
+  }
   return (
     <div className="account-title">
       <section className="account-title-left">
         <Form form={form} layout="inline">
-          <Form.Item
-            className="account-title-left-name"
-            label="名称"
-            name="name"
-          >
+          <Form.Item className="account-title-left-name" label="名称" name="name">
             <Input />
           </Form.Item>
-          <Form.Item
-            className="account-title-left-time"
-            label="创建日期"
-            name="date"
-          >
+          <Form.Item className="account-title-left-time" label="创建日期" name="date">
             <RangePicker />
           </Form.Item>
         </Form>
@@ -36,8 +33,12 @@ export default function AccountTitle() {
       <section className="account-title-right">
         <Button type="info">搜索</Button>
         <Button type="info">批量导入</Button>
-        <Button type="info" onClick={addClick}>添加台账</Button>
-        <Button type="info">批量删除</Button>
+        <Button type="info" onClick={addClick}>
+          添加台账
+        </Button>
+        <Button type="info" onClick={batchDel}>
+          批量删除
+        </Button>
       </section>
     </div>
   )

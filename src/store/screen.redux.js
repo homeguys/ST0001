@@ -7,6 +7,7 @@
  */
 
 import axios from 'axios'
+import qs from 'qs'
 import { toast } from '../utils/utils'
 
 const CHANGE_SCREEN_STATE = 'CHANGE_SCREEN_STATE'
@@ -41,8 +42,12 @@ export function changeScreenState(data) {
  * @description 请求基本统计信息 动态监测 + 水域现状 + 水利工程
  */
 export function getBaseInforStatistics() {
+  const params = qs.stringify({
+    page: 1,
+    limit: 20
+  })
   return (dispatch) => {
-    axios.get('./mock/1-screen/GetBaseInforStatistics.json').then((res) => {
+    axios.get('/ActionFactory/Overviewer/GetStatisticsManageInfo').then((res) => {
       const { data } = res.data
       if (res.status === 200) {
         dispatch(changeScreenState({ key: 'basicData', value: data }))
@@ -58,7 +63,7 @@ export function getBaseInforStatistics() {
  */
 export function GetStatisticsDynamicWaterRate() {
   return (dispatch) => {
-    axios.get('./mock/1-screen/GetStatisticsDynamicWaterRate.json').then((res) => {
+    axios.get('/ActionFactory/Overviewer/GetStatisticsDynamicWaterRate').then((res) => {
       const { data } = res.data
       if (res.status === 200) {
         dispatch(changeScreenState({ key: 'statisticsDynamicWaterRate', value: data }))
@@ -74,7 +79,7 @@ export function GetStatisticsDynamicWaterRate() {
  */
 export function GetStatisticsManageInfo() {
   return (dispatch) => {
-    axios.get('./mock/1-screen/GetStatisticsManageInfo.json').then((res) => {
+    axios.get('/ActionFactory/Overviewer/GetStatisticsManageInfo').then((res) => {
       const { data } = res.data
       if (res.status === 200) {
         dispatch(changeScreenState({ key: 'statisticsManageInfo', value: data }))

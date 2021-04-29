@@ -179,5 +179,5 @@
     "frontend"
   ],
   "license": "MIT",
-  "proxy": "http://192.168.1.118:8066"
+  "proxy": "http://121.40.215.50:701"
 }
